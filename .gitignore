@@ -5,3 +5,7 @@
 .settings/org.eclipse.wst.common.project.facet.core.xml
 build/classes/Well/WellnessForm.class
 .classpath
+.classpath
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.wst.common.project.facet.core.xml
+build/classes/Well/WellnessForm.class

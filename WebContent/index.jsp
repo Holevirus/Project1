@@ -14,16 +14,17 @@
 <title>Wellness Plan</title>
 </head>
 <body class = "bg">
-	<!-- Side navigation -->
-<div class="topnav">
-  <a href="#about">About</a>
-  <a href="#">Plans</a>
-  <a href="#">Supplements</a>
-  <a href="#">Contact</a>
+<div class = "stick">
+	<div class="topnav" id = "topnav">
+	  <a href="#main">Main</a>
+	  <a href="#about">About</a>
+	  <a href="#plans">Plans</a>
+	  <a href="#">Supplements</a>
+	  <a href="#">Contact</a>
+	</div>
 </div>
-
 <!-- Page content -->
-<div class="main">
+<div class="main" id = "main">
   <h1>Wellness Plans</h1><br>
 </div>
 
@@ -78,10 +79,23 @@
 	<div class="modal-content">
 	  <div class="modal-header">
 	    <span class="close">&times;</span>
+	    <div class="topnav">
+		  <a href="#home">Home</a>
+		  <a href="#news">About</a>
+		  <a href="#contact">Plans</a>
+		</div>
 	    <h2>Power Lifting</h2>
 	  </div>
 	  <div class="modal-body">
 	    <p>Power Lifting Stuff</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
 	    <p>Some other text...</p>
 	  </div>
 	  <div class="modal-footer">
@@ -97,10 +111,25 @@
 	<div class="modal-content">
 	  <div class="modal-header">
 	    <span class="close2">&times;</span>
+	    <div class="topnav">
+		  <a href="#home">Home</a>
+		  <a href="#news">About</a>
+		  <a href="#contact">Plans</a>
+		</div>
 	    <h2>Olympic Lifts</h2>
 	  </div>
 	  <div class="modal-body">
 	    <p>Olympic Lift stuff</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
 	    <p>Some other text...</p>
 	  </div>
 	  <div class="modal-footer">
@@ -116,10 +145,21 @@
 	<div class="modal-content">
 	  <div class="modal-header">
 	    <span class="close3">&times;</span>
+	    <div class="topnav">
+		  <a href="#home">Home</a>
+		  <a href="#news">About</a>
+		  <a href="#contact">Plans</a>
+		</div>
 	    <h2>Running/Cardio</h2>
 	  </div>
 	  <div class="modal-body">
 	    <p>Running Stuff</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
+	    <p>Some other text...</p>
 	    <p>Some other text...</p>
 	  </div>
 	  <div class="modal-footer">
@@ -131,6 +171,11 @@
 <div class = "space">
 </div>
 <div class = "bg2" id = "about" >
+<h2 class = "subtitle">About</h2>
+<h3 class ="subtitle">Business Stuff</h3>
+</div>
+<div class = "bg3" id = "plans">
+<h2 class = "subtitle">Plans</h2>
 </div>
 </body>
 

@@ -13,7 +13,8 @@
 <meta charset="UTF-8">
 <title>Wellness Plan</title>
 </head>
-<body class = "bg">
+<body>
+<div class = "bg">
 <div class = "stick">
 	<div class="topnav" id = "topnav">
 	  <a href="#main">Main</a>
@@ -69,7 +70,7 @@
   </div>
 </div>
 
-
+</div>
 <!-- The Modals for the different lifting plans -->
 <!-- All start out hidden and are changed based on javascript functions and onclick events -->
 <!-- The Modal -->
@@ -168,8 +169,8 @@
 	</div>
 
 </div>
-<div class = "space">
-</div>
+<!-- <div class = "space">
+</div> -->
 <div class = "bg2" id = "about" >
 <h2 class = "subtitle">About</h2>
 <h3 class ="subtitle">Business Stuff</h3>

@@ -24,13 +24,13 @@ html {
 }
 /* Three columns side by side */
 .column {
-    float: left;
-    width: 20%;
+    /*float: left;*/
+    width: 33%;
     margin-bottom: 16px;
     padding: 0 8px;
 }
 .row {
-	display: table;
+	/*display: table;*/
 }
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {

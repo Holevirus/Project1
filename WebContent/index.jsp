@@ -29,47 +29,49 @@
   <h1>Wellness Plans</h1><br>
 </div>
 
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="Pics/power.jpg" alt="Jane" style="width:90%">
-      <div class="container">
-        <h2>Power Lifting</h2>
-        <p class="title">Hello</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>Lifting stuff</p>
-        <p><button id="myBtn" class = "button">More Info</button></p>
-      </div>
-    </div>
-  </div>
 
-  <div class="column">
-    <div class="card">
-      <img src="Pics/olympic.jpg" alt="Mike" style="width:100%">
-      <div class="container">
-        <h2>Olympic Lifts</h2>
-        <p class="title">Hello</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>lifting stuff</p>
-        <p><button id="myBtn2" class = "button">More Info</button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="Pics/running.jpg" alt="John" style="width:100%">
-      <div class="container">
-        <h2>Running/Cardio</h2>
-        <p class="title">Hello</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>lifting stuff</p>
-        <p><button id="myBtn3" class = "button">More Info</button></p>
-      </div>
-    </div>
-  </div>
-</div>
-
+<table>
+	<tr class="row">
+	  <td class="column">
+	    <div class="card">
+	      <img src="Pics/power.jpg" alt="Jane" style="width:90%">
+	      <div class="container">
+	        <h2>Power Lifting</h2>
+	        <p class="title">Hello</p>
+	        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+	        <p>Lifting stuff</p>
+	        <p><button id="myBtn" class = "button">More Info</button></p>
+	      </div>
+	    </div>
+	  </td>
+	
+	  <td class="column">
+	    <div class="card">
+	      <img src="Pics/olympic.jpg" alt="Mike" style="width:100%">
+	      <div class="container">
+	        <h2>Olympic Lifts</h2>
+	        <p class="title">Hello</p>
+	        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+	        <p>lifting stuff</p>
+	        <p><button id="myBtn2" class = "button">More Info</button></p>
+	      </div>
+	    </div>
+	  </td>
+	
+	  <td class="column">
+	    <div class="card">
+	      <img src="Pics/running.jpg" alt="John" style="width:100%">
+	      <div class="container">
+	        <h2>Running/Cardio</h2>
+	        <p class="title">Hello</p>
+	        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+	        <p>lifting stuff</p>
+	        <p><button id="myBtn3" class = "button">More Info</button></p>
+	      </div>
+	    </div>
+	  </td>
+	</tr>
+</table>
 </div>
 <!-- The Modals for the different lifting plans -->
 <!-- All start out hidden and are changed based on javascript functions and onclick events -->

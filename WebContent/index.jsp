@@ -33,9 +33,10 @@ for(ArrayList<String> list : newList){
 	}
 	
 for( int r = 0; r < newList.size(); r ++){
-	if (newList.get(r).get(0).equals("workoutplan")){
-		for(int i = 1; i < newList.get(1).size(); i ++){
-			System.out.println(newList.get(1).get(i));
+	//System.out.println(newList.get(r).get(0));
+	if (newList.get(r).get(0).toString().toLowerCase().equals("workoutplan")){
+		for(int i = 1; i < newList.get(r).size(); i ++){
+			System.out.println(newList.get(r).get(i));
 		}
 		System.out.println("\n");
 	}

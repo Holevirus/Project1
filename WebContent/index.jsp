@@ -33,8 +33,12 @@ for(ArrayList<String> list : newList){
 	}
 	
 
-
-
+if (newList.get(1).equals("workoutplan")){
+	for(int i = 1; i < newList.get(1).size(); i ++){
+		System.out.println(newList.get(1).get(i));
+	}
+}
+System.out.println(newList.get(1).get(0));
 
 
 %>

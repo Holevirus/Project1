@@ -8,7 +8,9 @@
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.*"%>
 <%@page import="Well.Meta" %>
-
+<%
+Meta meta = new Meta();
+%>
 
 
 <!DOCTYPE html>

@@ -25,17 +25,24 @@ newList = meta.getTableMetadata();
 
 for(ArrayList<String> list : newList){
 	for (String row : list){
-		System.out.println(row);
+		//System.out.println(row);
 	
 	}
-	System.out.println("\n");
+	//System.out.println("\n");
 		
 	}
 	
+for( int r = 0; r < newList.size(); r ++){
+	if (newList.get(r).get(0).equals("workoutplan")){
+		for(int i = 1; i < newList.get(1).size(); i ++){
+			System.out.println(newList.get(1).get(i));
+		}
+		System.out.println("\n");
+	}
+	
+}
 
-
-
-
+System.out.println(newList.get(1).get(0));
 
 %>
 

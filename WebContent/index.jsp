@@ -8,7 +8,7 @@
 <head>
 <script src="/Project1/script.js" type="text/javascript"></script>
 <script type="text/javascript" src="/jquery-3.3.1.min.js"></script> 
-<link rel="stylesheet" href="/Project1/indexstyle.css" type="text/css">
+<link rel="stylesheet" href="/Project1/indexstyle2.css" type="text/css">
 
 <meta charset="UTF-8">
 <title>Wellness Plan</title>

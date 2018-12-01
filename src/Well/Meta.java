@@ -45,22 +45,6 @@ public class Meta {
 		// recieve the Type of the object in a String array.
 		rs = metadata.getTables(null, null, "%", table);
 		
-<<<<<<< HEAD
-		tables = new ArrayList<String>();
-		/*while (rs.next()) {
-			tables.add(rs.getString("TABLE_NAME"));
-			System.out.println(rs.getString("TABLE_NAME"));
-			
-		}
-		*/
-		String word = null;
-		
-		while(rs.next()) {
-			tables.add(rs.getString("TABLE_NAME"));
-			System.out.println(rs.getString("TABLE_NAME"));
-=======
-		
-		
 		
 		tables = new ArrayList<ArrayList>();
 		
@@ -71,7 +55,6 @@ public class Meta {
 			temp = new ArrayList<String>();
 			temp.add(rs.getString("TABLE_NAME"));
 			tables.add(temp);
->>>>>>> 0b4122e6819d3d0557f377ad68574d968c8610b5
 			word = rs.getString("TABLE_NAME");
 		stmt = connection.createStatement();
 		rs2 = stmt.executeQuery("SELECT * FROM " + word);
@@ -82,7 +65,6 @@ public class Meta {
 			columns = new ArrayList<String>();
 			System.out.println(word);
 			for (int i=1; i<=count; i++) {
-				System.out.println("THIS IS A COLUMN:  " + md.getColumnName(i));
 				columns.add(md.getColumnName(i));
 			}
 			tables.add(columns);

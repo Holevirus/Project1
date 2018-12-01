@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="/Project1/indexstyle2.css" type="text/css">
 
 <meta charset="UTF-8">
-<title>Wellness Plan</title>
+<title>Wellness Plan is dumb</title>
 </head>
 <body>
 <div class = "bg">

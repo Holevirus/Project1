@@ -6,16 +6,36 @@
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
+<%@page import="java.sql.*" %>
+<%@page import="java.util.*" %>
 <%@page import="java.sql.*"%>
 <%@page import="Well.Meta" %>
 <%
+
+
+ArrayList<ArrayList> newList = new ArrayList<ArrayList>();
+
 Meta meta = new Meta();
 meta.printGeneralMetadata();
 try{
-meta.getTableMetadata();
+newList = meta.getTableMetadata();
 } catch (SQLException e){
 	System.out.println(e.getMessage());
 }
+
+for(ArrayList<String> list : newList){
+	for (String row : list){
+		System.out.println(row);
+	
+	}
+	System.out.println("\n");
+		
+	}
+	
+
+
+
+
 
 %>
 
@@ -122,6 +142,8 @@ meta.getTableMetadata();
 			</tr>
 			
 			</table>
+			
+			
 
 	  </div>
 	  <div class="modal-footer">

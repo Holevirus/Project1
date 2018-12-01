@@ -40,6 +40,8 @@ for(ArrayList<String> list : newList){
 %>
 
 
+
+
 <!DOCTYPE html>
 <html>
 <head>

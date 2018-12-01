@@ -11,20 +11,16 @@ public class Meta {
 	static DatabaseMetaData metadata = null;
 	
 	// Static block for initialization
-	static {
-		try {
-			connection = DBconnection.;
-		} catch (SQLException e){
-			System.err.println("There was an error getting the connection: " + e.getMessage());
-		}
-		
-		try {
-			metadata = connection.getMetaData();
-		} catch (SQLException e) {
-			System.err.println("There was an error getting the meta data: " + e.getMessage());
-		}
-		
+	public Meta() {
+	connection = DBconnection.newConnection();
+	
+	try {
+		metadata = connection.getMetaData();
+	} catch (SQLException e) {
+		System.err.println("There was an error getting the meta data: " + e.getMessage());
 	}
+	}
+
 	
 	public void printGeneralMetadata() throws SQLException {
 		

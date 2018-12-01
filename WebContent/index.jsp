@@ -10,6 +10,7 @@
 <%@page import="Well.Meta" %>
 <%
 Meta meta = new Meta();
+meta.printGeneralMetadata();
 %>
 
 

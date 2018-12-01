@@ -17,7 +17,7 @@ public class DBconnection {
 	
 	
 	static DBconnection instance = new DBconnection();
-	Connection dbconn;
+	static Connection dbconn;
 	ResultSet results = null;
 	PreparedStatement sql;
 	String dpwd = null;
@@ -26,7 +26,7 @@ public class DBconnection {
 
 	
 	//change URL to your database server as needed
-	String dbPath="jdbc:mysql://localhost:3306/Lab_5?useUnicode=true&useJDBCCompliantTimezoneShift="
+	static String dbPath="jdbc:mysql://localhost:3306/wellness?useUnicode=true&useJDBCCompliantTimezoneShift="
 			+ "true&useLegacyDatetimeCode=false&serverTimezone=UTC";
 	
 	public static DBconnection getInstance() {
@@ -38,7 +38,7 @@ public class DBconnection {
 	
 	
 	
-	public Connection newConnection() {
+	public static Connection newConnection() {
 		
 		
 		try {
@@ -46,7 +46,7 @@ public class DBconnection {
 			//Class.forName("com.mysql.jbdc.Driver").newInstance();
 			
 			try {			
-				dbconn = DriverManager.getConnection(dbPath,"root","Diomary-8");
+				dbconn = DriverManager.getConnection(dbPath,"root","toor");
 				System.out.println("gain the connection");
 				return dbconn;
 			}

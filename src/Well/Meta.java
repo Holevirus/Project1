@@ -13,7 +13,7 @@ public class Meta {
 	// Static block for initialization
 	static {
 		try {
-			connection = DBconnection.getConnection();
+			connection = DBconnection.;
 		} catch (SQLException e){
 			System.err.println("There was an error getting the connection: " + e.getMessage());
 		}

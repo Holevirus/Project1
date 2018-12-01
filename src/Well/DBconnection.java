@@ -7,22 +7,55 @@ import java.sql.*;
 import java.util.*;
 
 
+
 /**
  * @author ci5170oy
  *
  */
 public class DBconnection {
 	
-	private static String DB_URL = "jdbc:mysql://localhost:3306/cs485_lab?useUnicode=true&useJDBCCompliantTimezoneShift="
-			+ "true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-	private static String DB_USER = "root";
-	private static String DB_PASSWORD = "Diomary-8";
 	
-	public static Connection getConnection() throws SQLException {
-		Connection connection = DriverManager.getConnection(DB_URL,DB_USER,DB_PASSWORD);
-		System.err.println("The connection is successfully obtained");
-		return connection;
-	}
+	
+	static DBconnection instance = new DBconnection();
+	Connection dbconn;
+	ResultSet results = null;
+	PreparedStatement sql;
+	String dpwd = null;
+	StringBuilder sb = new StringBuilder();
 	
 
+	
+	//change URL to your database server as needed
+	String dbPath="jdbc:mysql://localhost:3306/Lab_5?useUnicode=true&useJDBCCompliantTimezoneShift="
+			+ "true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+	
+	public static DBconnection getInstance() {
+		if (instance==null) {
+			instance = new DBconnection();
+		}
+		return instance;
+	}
+	
+	
+	
+	public Connection newConnection() {
+		
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			//Class.forName("com.mysql.jbdc.Driver").newInstance();
+			
+			try {			
+				dbconn = DriverManager.getConnection(dbPath,"root","Diomary-8");
+				System.out.println("gain the connection");
+				return dbconn;
+			}
+			catch (Exception s){
+				System.out.println(s.getMessage());}
+		}
+		catch (Exception err){
+			System.out.println(err.getMessage());
+		}
+		return null;
+	}
 }

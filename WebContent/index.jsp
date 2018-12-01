@@ -3,6 +3,14 @@
 <!-- Hello -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.*"%>
+<%@page import="Well.Meta" %>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +21,8 @@
 <meta charset="UTF-8">
 <title>Wellness Plan</title>
 </head>
-<body class = "bg">
+<body>
+<div class = "bg">
 <div class = "stick">
 	<div class="topnav" id = "topnav">
 	  <a href="#main">Main</a>
@@ -80,23 +89,29 @@
 	  <div class="modal-header">
 	    <span class="close">&times;</span>
 	    <div class="topnav">
-		  <a href="#home">Home</a>
-		  <a href="#news">About</a>
-		  <a href="#contact">Plans</a>
+		  <a href="#home">Workout Plan</a>
+		  <a href="#meal">Daily Meal Plan</a>
+		  <a href="#supp">Supplement Plan</a>
 		</div>
 	    <h2>Power Lifting</h2>
 	  </div>
 	  <div class="modal-body">
 	    <p>Power Lifting Stuff</p>
 	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
+	    	<h1>Retrieve data from database in jsp</h1>
+			<table border="1">
+			<tr>
+				<td>Workout Plan</td>
+				<td>#WOperDay</td>
+				<td>Goal</td>
+				<td>Intensity Rating</td>
+				<td>Length</td>
+				<td>Author</td>
+				<td>Equip Needed</td>
+			</tr>
+			
+			</table>
+
 	  </div>
 	  <div class="modal-footer">
 	    <h3>Increase Mass and Strength</h3>
@@ -112,9 +127,9 @@
 	  <div class="modal-header">
 	    <span class="close2">&times;</span>
 	    <div class="topnav">
-		  <a href="#home">Home</a>
-		  <a href="#news">About</a>
-		  <a href="#contact">Plans</a>
+		  <a href="#home">Workout Plan</a>
+		  <a href="#meal">Daily Meal Plan</a>
+		  <a href="#supp">Supplement Plan</a>
 		</div>
 	    <h2>Olympic Lifts</h2>
 	  </div>
@@ -146,9 +161,9 @@
 	  <div class="modal-header">
 	    <span class="close3">&times;</span>
 	    <div class="topnav">
-		  <a href="#home">Home</a>
-		  <a href="#news">About</a>
-		  <a href="#contact">Plans</a>
+		  <a href="#home">Workout Plan</a>
+		  <a href="#meal">Daily Meal Plan</a>
+		  <a href="#supp">Supplement Plan</a>
 		</div>
 	    <h2>Running/Cardio</h2>
 	  </div>
@@ -168,15 +183,20 @@
 	</div>
 
 </div>
-<div class = "space">
+
 </div>
 <div class = "bg2" id = "about" >
-<h2 class = "subtitle">About</h2>
-<h3 class ="subtitle">Business Stuff</h3>
+	<h2 class = "subtitle">About</h2>
+	<h3 class ="subtitle">Business Stuff</h3>
 </div>
 <div class = "bg3" id = "plans">
-<h2 class = "subtitle">Plans</h2>
+	<h2 class = "subtitle">Plans</h2>
 </div>
+
+
+
+
+
 </body>
 
 </html>

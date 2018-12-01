@@ -42,8 +42,7 @@ public class Meta {
 		// recieve the Type of the object in a String array.
 		rs = metadata.getTables(null, null, "%", table);
 		
-		tables = 
-		new ArrayList<String>();
+		tables = new ArrayList<String>();
 		/*while (rs.next()) {
 			tables.add(rs.getString("TABLE_NAME"));
 			System.out.println(rs.getString("TABLE_NAME"));
@@ -54,6 +53,7 @@ public class Meta {
 		
 		while(rs.next()) {
 			tables.add(rs.getString("TABLE_NAME"));
+			System.out.println(rs.getString("TABLE_NAME"));
 			word = rs.getString("TABLE_NAME");
 		stmt = connection.createStatement();
 		rs2 = stmt.executeQuery("SELECT * FROM " + word);

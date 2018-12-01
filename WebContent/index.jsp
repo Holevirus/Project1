@@ -11,6 +11,12 @@
 <%
 Meta meta = new Meta();
 meta.printGeneralMetadata();
+try{
+meta.getTableMetadata();
+} catch (SQLException e){
+	System.out.println(e.getMessage());
+}
+
 %>
 
 

@@ -35,15 +35,17 @@ public class Meta {
 	}
 	
 	public  ArrayList<String> getTableMetadata() throws SQLException  {
-		String table[] = {"table"};
+		String table[] = {"TABLE"};
 		ResultSet rs = null;
 		ArrayList<String> tables = null;
 		// recieve the Type of the object in a String array.
-		rs = metadata.getTables(null, null, null, table);
+		rs = metadata.getTables(null, null, "%", table);
 		tables = 
 		new ArrayList<String>();
 		while (rs.next()) {
 			tables.add(rs.getString("TABLE_NAME"));
+			System.out.println(rs.getString("TABLE_NAME"));
+			System.out.println(rs.getMetaData());
 		}
 		return tables;
 	}

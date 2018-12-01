@@ -132,13 +132,13 @@ for(ArrayList<String> list : newList){
 	    	<h1>Retrieve data from database in jsp</h1>
 			<table border="1">
 			<tr>
-				<td>Workout Plan</td>
-				<td>#WOperDay</td>
-				<td>Goal</td>
-				<td>Intensity Rating</td>
-				<td>Length</td>
-				<td>Author</td>
-				<td>Equip Needed</td>
+				<th>Workout Plan</th>
+				<th>#WOperDay</th>
+				<th>Goal</th>
+				<th>Intensity Rating</th>
+				<th>Length</th>
+				<th>Author</th>
+				<th>Equip Needed</th>
 			</tr>
 			
 			</table>

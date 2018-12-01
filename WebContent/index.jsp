@@ -222,7 +222,7 @@ for(ArrayList<String> list : newList){
 =======
 <!-- <div class = "space">
 </div> -->
->>>>>>> 0f2e42b30ad3af60596a0a34efee5aa4d4e33952
+
 <div class = "bg2" id = "about" >
 	<h2 class = "subtitle">About</h2>
 	<h3 class ="subtitle">Business Stuff</h3>

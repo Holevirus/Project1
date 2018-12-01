@@ -22,28 +22,22 @@ newList = meta.getTableMetadata();
 } catch (SQLException e){
 	System.out.println(e.getMessage());
 }
-
-for(ArrayList<String> list : newList){
-	for (String row : list){
-		//System.out.println(row);
 	
-	}
-	//System.out.println("\n");
+/*
+
+	ArrayList<String> returnValues = new ArrayList<String>();
+	for( int r = 0; r < newList.size(); r ++){
+		//System.out.println(newList.get(r).get(0));
+		if (newList.get(r).get(0).toString().toLowerCase().equals(tName)){
+			for(int i = 1; i < newList.get(r).size(); i ++){
+				returnValues.add((String)newList.get(r).get(i));
+			}
+		}
 		
 	}
-	
-for( int r = 0; r < newList.size(); r ++){
-	//System.out.println(newList.get(r).get(0));
-	if (newList.get(r).get(0).toString().toLowerCase().equals("workoutplan")){
-		for(int i = 1; i < newList.get(r).size(); i ++){
-			System.out.println(newList.get(r).get(i));
-		}
-		System.out.println("\n");
-	}
-	
-}
+	*/
 
-System.out.println(newList.get(1).get(0));
+
 
 %>
 
@@ -151,10 +145,26 @@ System.out.println(newList.get(1).get(0));
 				<th>Equip Needed</th>
 			</tr>
 			
+			<%
+			// for every column
+			ArrayList<ArrayList> tempList = meta.blockBuilder("workoutplan");
+			
+			for(ArrayList<String> row : tempList){
+				out.print("<tr>");
+				for(String value : row){
+					out.print("<td>");
+					out.print(value);
+					out.print("</td>");
+					
+				}
+				out.print("</tr>");
+			}
+		
+			
+				//for every value in that column
+			System.out.println();
+			%>
 			</table>
-			
-			
-
 	  </div>
 	  <div class="modal-footer">
 	    <h3>Increase Mass and Strength</h3>

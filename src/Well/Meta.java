@@ -33,6 +33,38 @@ public class Meta {
 		System.out.println("\n");
 		
 	}
+	public ArrayList<String> valuePull(String t, String c) throws SQLException{
+		
+		ResultSet rs2 = null;
+		String table = t;
+		String column = c;
+		ArrayList<String> returnValues = new ArrayList<String>();
+		
+		
+		try {
+			stmt = connection.createStatement();
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		try {
+			rs2 = stmt.executeQuery("SELECT * FROM " + table);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		while (rs2.next()) {
+			returnValues.add((String) rs2.getObject(column));
+			
+		}
+		
+		
+		
+		
+		return returnValues;
+		
+	}
 	
 	public  ArrayList<ArrayList> getTableMetadata() throws SQLException  {
 		String table[] = {"TABLE"};
@@ -56,10 +88,10 @@ public class Meta {
 			temp.add(rs.getString("TABLE_NAME"));
 			tables.add(temp);
 			word = rs.getString("TABLE_NAME");
-		stmt = connection.createStatement();
-		rs2 = stmt.executeQuery("SELECT * FROM " + word);
-		ResultSetMetaData md = rs2.getMetaData();
-		int count = md.getColumnCount();
+			stmt = connection.createStatement();
+			rs2 = stmt.executeQuery("SELECT * FROM " + word);
+			ResultSetMetaData md = rs2.getMetaData();
+			int count = md.getColumnCount();
 		
 	
 			columns = new ArrayList<String>();

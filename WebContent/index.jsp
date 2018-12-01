@@ -215,8 +215,6 @@ for(ArrayList<String> list : newList){
 	  </div>
 	</div>
 
-</div>
-<<<<<<< HEAD
 
 </div>
 =======

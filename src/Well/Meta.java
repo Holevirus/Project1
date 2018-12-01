@@ -66,13 +66,37 @@ public class Meta {
 		
 	}
 	
+	public void valuePush(String t, ArrayList list) throws SQLException{
+		
+		String table = t;
+		ArrayList values = list;
+		
+		
+		try {
+			stmt = connection.createStatement();
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		try {
+			stmt.executeQuery("SELECT * FROM " + table);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	
+		
+		
+				
+	}
+	
 	public  ArrayList<ArrayList> getTableMetadata() throws SQLException  {
 		String table[] = {"TABLE"};
 		ResultSet rs = null;
 		ResultSet rs2 = null;
 		ArrayList<ArrayList> tables = null;
-		ArrayList<String> columns = null;
-		ArrayList<String> temp = null;
+		ArrayList<String> foreach = null;
 
 		// recieve the Type of the object in a String array.
 		rs = metadata.getTables(null, null, "%", table);
@@ -81,12 +105,13 @@ public class Meta {
 		tables = new ArrayList<ArrayList>();
 		
 		
+		
 		String word = null;
 		
 		while(rs.next()) {
-			temp = new ArrayList<String>();
-			temp.add(rs.getString("TABLE_NAME"));
-			tables.add(temp);
+			foreach = new ArrayList<String>();
+			foreach.add(rs.getString("TABLE_NAME"));
+			//tables.add(temp);
 			word = rs.getString("TABLE_NAME");
 			stmt = connection.createStatement();
 			rs2 = stmt.executeQuery("SELECT * FROM " + word);
@@ -94,12 +119,12 @@ public class Meta {
 			int count = md.getColumnCount();
 		
 	
-			columns = new ArrayList<String>();
-			System.out.println(word);
+			//columns = new ArrayList<String>();
+			//System.out.println(word);
 			for (int i=1; i<=count; i++) {
-				columns.add(md.getColumnName(i));
+				foreach.add(md.getColumnName(i));
 			}
-			tables.add(columns);
+			tables.add(foreach);
 			
 		}
 		return tables;

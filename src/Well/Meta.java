@@ -6,7 +6,7 @@ import java.util.*;
 public class Meta {
 
 	
-	
+	static Statement stmt=null;
 	static Connection connection = null;
 	static DatabaseMetaData metadata = null;
 	
@@ -37,17 +37,37 @@ public class Meta {
 	public  ArrayList<String> getTableMetadata() throws SQLException  {
 		String table[] = {"TABLE"};
 		ResultSet rs = null;
+		ResultSet rs2 = null;
 		ArrayList<String> tables = null;
 		// recieve the Type of the object in a String array.
 		rs = metadata.getTables(null, null, "%", table);
+		
 		tables = 
 		new ArrayList<String>();
-		while (rs.next()) {
+		/*while (rs.next()) {
 			tables.add(rs.getString("TABLE_NAME"));
 			System.out.println(rs.getString("TABLE_NAME"));
-			System.out.println(rs.getMetaData());
+			
+		}
+		*/
+		String word = null;
+		
+		while(rs.next()) {
+			tables.add(rs.getString("TABLE_NAME"));
+			word = rs.getString("TABLE_NAME");
+		stmt = connection.createStatement();
+		rs2 = stmt.executeQuery("SELECT * FROM " + word);
+		ResultSetMetaData md = rs2.getMetaData();
+		int count = md.getColumnCount();
+		
+			for (int i=1; i<=count; i++) {
+				System.out.println("THIS IS A COLUMN:  " + md.getColumnName(i));
+			}
+			
 		}
 		return tables;
+		
+		
 	}
 	
 	

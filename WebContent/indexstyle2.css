@@ -381,6 +381,11 @@ body, html {
   color: white;
   transform: rotateY(180deg);
 }
+.stuff {
+	width: 100%;
+	margin: auto;
+}
 .stuff td{
 	width: 33%;
+	margin: auto;
 }

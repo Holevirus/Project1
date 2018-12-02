@@ -77,15 +77,17 @@ html {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    width: 100%;
+    font-size: 20px;
+    width: 25%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
+    margin:auto;
+  	display:block;
 }
 
 .button {
-    background-color: white; 
+    background-color: grey; 
     color: black; 
     border: 2px solid black;
 }

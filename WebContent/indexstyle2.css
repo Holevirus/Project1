@@ -244,7 +244,7 @@ body, html {
 .modal-content {
     position: relative;
     background-color: #fefefe;
-    margin: auto;
+    margin: 50%;
     padding: 0;
     border: 1px solid #888;
     width: 80%;
@@ -257,4 +257,17 @@ body, html {
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
+}
+.modal-background1-1,.modal-background1-2,.modal-background1-3{
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+	padding-top: 25px;
+	margin: 50%;
+}
+.modal-background1-1,.modal-background1-2,.modal-background1-3{
+	background-image: url("Pics/background.jpg");
+	
+	height: 100%;
+	
 }

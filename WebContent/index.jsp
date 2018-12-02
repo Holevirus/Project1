@@ -203,19 +203,20 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 		</div>
 	    <h2>Olympic Lifts</h2>
 	  </div>
+	<!-- Content in the modal -->
 	  <div class="modal-body">
-	    <p>Olympic Lift stuff</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
+		    <div class = "modal-background1-1">
+		    	<!--  PAGE 1 -->
+		    	
+		    </div>
+		    <div class = "modal-background1-2">
+		    	<!--  PAGE 2 -->
+		    	
+		    </div>
+		    <div class = "modal-background1-2">
+		    	<!--  PAGE 3 -->
+		    	
+		    </div>
 	  </div>
 	  <div class="modal-footer">
 	    <h3>Increase full body strength working multiple body groups with each workout</h3>

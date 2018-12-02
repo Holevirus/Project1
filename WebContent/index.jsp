@@ -61,7 +61,7 @@ newList = meta.getTableMetadata();
 	  <a href="#main">Main</a>
 	  <a href="#about">About</a>
 	  <a href="#plans">Plans</a>
-	  <a href="#">Supplements</a>
+	  <a href="#supps">Supplements</a>
 	  <a href="#">Contact</a>
 	</div>
 </div>
@@ -72,7 +72,6 @@ newList = meta.getTableMetadata();
 </div>
 
 
-=======
 <!-- <div class = "space">
 </div> -->
 
@@ -249,9 +248,8 @@ newList = meta.getTableMetadata();
 
 </div>
 	
-<div class = "bg4" id = "about" >
-	<h2 class = "subtitle">About</h2>
-	<h3 class ="subtitle">Business Stuff</h3>
+<div class = "bg4" id = "supps" >
+	<h2 class = "subtitle">Supplements</h2>
 </div>
 
 <div class = "bg5" id = "about" >

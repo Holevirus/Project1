@@ -516,50 +516,70 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 <table class = "fit">
 	<tr class="suppRow">
 	  <td class="columnsupp" id ="box1" onclick="openTab('b1');" style="background:#333;">
-	    Box 1
+	    Fat Burner
 	  </td>
 	  <td class="columnsupp" id ="box2" onclick="openTab('b2');" style="background:#333;">
-	    Box 2
+	    Protein Heavy
 	  </td>
 	  <td class="columnsupp" id = "box3" onclick="openTab('b3');" style="background:#333;">
-	    Box 3
+	    Energy Blend
 	  </td>
 	  <td class="columnsupp" id = "box4" onclick="openTab('b4');" style="background:#333;">
-	    Box 4
+	    Endurance
 	  </td>
 	  <td class="columnsupp" id = "box5" onclick="openTab('b5');" style="background:#333;">
-	    Box 5
+	    NCAA Approved
 	  </td>
 	</tr>
 </table>
 <!-- Full-width columns: (hidden by default) -->
-<div id="b1" class="containerTab" style="background:green">
+<div id="b1" class="containerTab" style="background:#333">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <h2>Box 1</h2>
+  <h2>Fat Burner</h2>
+  <p>
+  	<%
+		// for every column
+		ArrayList<ArrayList> fburn = meta.blockBuilder("supplementplan_has_supplement");
+		
+		for(ArrayList<String> row : fburn){
+			if(row.contains("Fat Burner")){
+				System.out.println(row);
+				ArrayList<ArrayList> val = meta.blockBuilder("supplementplan");
+				for(ArrayList<String> row2 : val){
+					if(row2.contains(row.get(1))){
+						System.out.println(row2);
+					}
+				
+			}
+		}
+		}
+	%>
+  </p>
+</div>
+
+<div id="b2" class="containerTab" style="background:#333">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Protein Heavy</h2>
+  <p>
+  	
+  </p>
+  </div>
+
+<div id="b3" class="containerTab" style = "background:#333">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Energy Blend</h2>
   <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
 </div>
 
-<div id="b2" class="containerTab" style="background:blue">
+<div id="b4" class="containerTab" style = "background:#333">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <h2>Box 2</h2>
+  <h2>Endurance</h2>
   <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
 </div>
 
-<div id="b3" class="containerTab" style = "background:red">
+<div id="b5" class="containerTab" style = "background:#333">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <h2>Box 3</h2>
-  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
-</div>
-
-<div id="b4" class="containerTab" style = "background:purple">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <h2>Box 4</h2>
-  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
-</div>
-
-<div id="b5" class="containerTab" style = "background:yellow">
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <h2>Box 5</h2>
+  <h2>NCAA Approved</h2>
   <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
 </div>
 	

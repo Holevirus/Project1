@@ -515,24 +515,25 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	
 	<!-- The grid: three columns -->
 	<!-- Three columns -->
-<div class="suppRow">
-  <div class="columnsupp" id ="box1" onclick="openTab('b1');" style="background:green;">
-    Box 1
-  </div>
-  <div class="columnsupp" id ="box2" onclick="openTab('b2');" style="background:blue;">
-    Box 2
-  </div>
-  <div class="columnsupp" id = "box3" onclick="openTab('b3');" style="background:red;">
-    Box 3
-  </div>
-  <div class="columnsupp" id = "box4" onclick="openTab('b4');" style="background:purple;">
-    Box 4
-  </div>
-  <div class="columnsupp" id = "box5" onclick="openTab('b5');" style="background:yellow;">
-    Box 5
-  </div>
-</div>
-
+<table class = "fit">
+	<div class="suppRow">
+	  <div class="columnsupp" id ="box1" onclick="openTab('b1');" style="background:green;">
+	    Box 1
+	  </div>
+	  <div class="columnsupp" id ="box2" onclick="openTab('b2');" style="background:blue;">
+	    Box 2
+	  </div>
+	  <div class="columnsupp" id = "box3" onclick="openTab('b3');" style="background:red;">
+	    Box 3
+	  </div>
+	  <div class="columnsupp" id = "box4" onclick="openTab('b4');" style="background:purple;">
+	    Box 4
+	  </div>
+	  <div class="columnsupp" id = "box5" onclick="openTab('b5');" style="background:yellow;">
+	    Box 5
+	  </div>
+	</div>
+</table>
 <!-- Full-width columns: (hidden by default) -->
 <div id="b1" class="containerTab" style="background:green">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>

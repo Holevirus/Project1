@@ -540,19 +540,23 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
   	<%
 		// for every column
 		ArrayList<ArrayList> fburn = meta.blockBuilder("supplementplan_has_supplement");
-		
+		ArrayList<String> temp = new ArrayList<String>();
+		String cValue = "";
 		for(ArrayList<String> row : fburn){
 			if(row.contains("Fat Burner")){
-				System.out.println(row);
-				ArrayList<ArrayList> val = meta.blockBuilder("supplementplan");
-				for(ArrayList<String> row2 : val){
-					if(row2.contains(row.get(1))){
-						System.out.println(row2);
+				cValue = row.get(1);
+				temp.add(cValue);
+			}
+		}
+		ArrayList<ArrayList> val = meta.blockBuilder("supplement");
+		for(ArrayList<String> row2 : val){
+			if(temp.contains(row2.get(0))){
+				System.out.println(row2);
 					}
 				
 			}
-		}
-		}
+		
+		
 	%>
   </p>
 </div>

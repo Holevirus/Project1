@@ -536,13 +536,21 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 <div id="b1" class="containerTab" style="background:#333">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Fat Burner</h2>
-  <p>
+  <table class = "data" border="1">
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>When To Take</th>
+						<th>Usage</th>
+	
+					</tr>
+ 
   	<%
 		// for every column
-		ArrayList<ArrayList> fburn = meta.blockBuilder("supplementplan_has_supplement");
+		ArrayList<ArrayList> end = meta.blockBuilder("supplementplan_has_supplement");
 		ArrayList<String> temp = new ArrayList<String>();
 		String cValue = "";
-		for(ArrayList<String> row : fburn){
+		for(ArrayList<String> row : end){
 			if(row.contains("Fat Burner")){
 				cValue = row.get(1);
 				temp.add(cValue);
@@ -551,40 +559,194 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 		ArrayList<ArrayList> val = meta.blockBuilder("supplement");
 		for(ArrayList<String> row2 : val){
 			if(temp.contains(row2.get(0))){
-				System.out.println(row2);
+				out.print("<tr>");
+				for(String value : row2){
+					out.print("<td>");
+					out.print(value);
+					out.print("</td>");
+					
+				}
+				out.print("</tr>");
 					}
 				
 			}
 		
 		
 	%>
-  </p>
+	</table>
+  
 </div>
 
 <div id="b2" class="containerTab" style="background:#333">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Protein Heavy</h2>
-  <p>
-  	
-  </p>
+  <table class = "data" border="1">
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>When To Take</th>
+						<th>Usage</th>
+	
+					</tr>
+ 
+  	<%
+		// for every column
+		ArrayList<ArrayList> phe = meta.blockBuilder("supplementplan_has_supplement");
+		ArrayList<String> temp2 = new ArrayList<String>();
+		String cValue2 = "";
+		for(ArrayList<String> row : phe){
+			if(row.contains("Protein Heavy")){
+				cValue2 = row.get(1);
+				temp2.add(cValue2);
+			}
+		}
+		ArrayList<ArrayList> val2 = meta.blockBuilder("supplement");
+		for(ArrayList<String> row2 : val2){
+			if(temp2.contains(row2.get(0))){
+				out.print("<tr>");
+				for(String value : row2){
+					out.print("<td>");
+					out.print(value);
+					out.print("</td>");
+					
+				}
+				out.print("</tr>");
+					}
+				
+			}
+		
+		
+	%>
+	</table>
   </div>
 
 <div id="b3" class="containerTab" style = "background:#333">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Energy Blend</h2>
-  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+  <table class = "data" border="1">
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>When To Take</th>
+						<th>Usage</th>
+	
+					</tr>
+ 
+  	<%
+		// for every column
+		ArrayList<ArrayList> eblend = meta.blockBuilder("supplementplan_has_supplement");
+		ArrayList<String> etemp = new ArrayList<String>();
+		String ecvalue = "";
+		for(ArrayList<String> row : eblend){
+			if(row.contains("Energy Blend")){
+				ecvalue = row.get(1);
+				etemp.add(ecvalue);
+			}
+		}
+		ArrayList<ArrayList> val3 = meta.blockBuilder("supplement");
+		for(ArrayList<String> row2 : val3){
+			if(etemp.contains(row2.get(0))){
+				out.print("<tr>");
+				for(String value : row2){
+					out.print("<td>");
+					out.print(value);
+					out.print("</td>");
+					
+				}
+				out.print("</tr>");
+					}
+				
+			}
+		
+		
+	%>
+	</table>
 </div>
 
 <div id="b4" class="containerTab" style = "background:#333">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Endurance</h2>
-  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+  <table class = "data" border="1">
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>When To Take</th>
+						<th>Usage</th>
+	
+					</tr>
+ 
+  	<%
+		// for every column
+		ArrayList<ArrayList> end2 = meta.blockBuilder("supplementplan_has_supplement");
+		ArrayList<String> temp4 = new ArrayList<String>();
+		String cValue4 = "";
+		for(ArrayList<String> row : end2){
+			if(row.contains("Endurance")){
+				cValue4 = row.get(1);
+				temp4.add(cValue4);
+			}
+		}
+		ArrayList<ArrayList> val4 = meta.blockBuilder("supplement");
+		for(ArrayList<String> row2 : val4){
+			if(temp4.contains(row2.get(0))){
+				out.print("<tr>");
+				for(String value : row2){
+					out.print("<td>");
+					out.print(value);
+					out.print("</td>");
+					
+				}
+				out.print("</tr>");
+					}
+				
+			}
+		
+		
+	%>
+	</table>
 </div>
 
 <div id="b5" class="containerTab" style = "background:#333">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>NCAA Approved</h2>
-  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+  <table class = "data" border="1">
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>When To Take</th>
+						<th>Usage</th>
+	
+					</tr>
+ 
+  	<%
+		// for every column
+		ArrayList<ArrayList> end4 = meta.blockBuilder("supplementplan_has_supplement");
+		ArrayList<String> endtemp = new ArrayList<String>();
+		String cendvalue = "";
+		for(ArrayList<String> row : end4){
+			if(row.contains("NCAA Approved")){
+				cendvalue = row.get(1);
+				endtemp.add(cendvalue);
+			}
+		}
+		ArrayList<ArrayList> endval = meta.blockBuilder("supplement");
+		for(ArrayList<String> row2 : endval){
+			if(endtemp.contains(row2.get(0))){
+				out.print("<tr>");
+				for(String endvalue : row2){
+					out.print("<td>");
+					out.print(endvalue);
+					out.print("</td>");
+					
+				}
+				out.print("</tr>");
+					}
+				
+			}
+		
+		
+	%>
+	</table>
 </div>
 	
 </div>

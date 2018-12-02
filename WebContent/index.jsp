@@ -127,7 +127,6 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	        <p class="title">Hello</p>
 	        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
 	        <p>Lifting stuff</p>
-	        <p><button id="myBtn" class = "button">More Info</button></p>
 	      </div>
 	    </div>
 	  </td>
@@ -140,7 +139,6 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	        <p class="title">Hello</p>
 	        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
 	        <p>lifting stuff</p>
-	        <p><button id="myBtn2" class = "button">More Info</button></p>
 	      </div>
 	    </div>
 	  </td>
@@ -153,12 +151,12 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	        <p class="title">Hello</p>
 	        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
 	        <p>lifting stuff</p>
-	        <p><button id="myBtn3" class = "button">More Info</button></p>
 	      </div>
 	    </div>
 	  </td>
 	</tr>
 </table>
+<p><button id="myBtn" class = "button">More Info</button></p>
 </div>
 <!-- The Modals for the different lifting plans -->
 <!-- All start out hidden and are changed based on javascript functions and onclick events -->

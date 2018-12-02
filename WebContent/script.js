@@ -54,6 +54,12 @@ window.onload = function(){
 	});
 	//
 	//
+	
+	
+	
+	
+	//
+	//
 	//
 	//
 	// Get the modal
@@ -81,7 +87,71 @@ window.onload = function(){
 		if (event.target == modal3) {
 	        modal3.style.display = "none";}
 	});
-	
+	//
+	//
+	//
+	//
+	//
+	// Hide all elements with class="containerTab", except for the one that matches the clickable grid column
+			var b1 = document.getElementById('b1');
+			var b2 = document.getElementById('b2');
+			var b3 = document.getElementById('b3');
+			var b4 = document.getElementById('b4');
+			var b5 = document.getElementById('b5');
+			var box1 = document.getElementById('box1');
+			var box2 = document.getElementById('box2');
+			var box3 = document.getElementById('box3');
+			var box4 = document.getElementById('box4');
+			var box5 = document.getElementById('box5');
+			
+			box1.onclick = function(){
+				b2.style.display = "none";
+				b3.style.display = "none";
+				b4.style.display = "none";
+				b5.style.display = "none";
+				b1.style.display = "block";
+			}
+			box2.onclick = function(){
+				b1.style.display = "none";
+				b3.style.display = "none";
+				b4.style.display = "none";
+				b5.style.display = "none";
+				b2.style.display = "block";
+			}
+			box3.onclick = function(){
+				b1.style.display = "none";
+				b2.style.display = "none";
+				b4.style.display = "none";
+				b5.style.display = "none";
+				b3.style.display = "block";
+			}
+			box4.onclick = function(){
+				b1.style.display = "none";
+				b2.style.display = "none";
+				b3.style.display = "none";
+				b5.style.display = "none";
+				b4.style.display = "block";
+			}
+			box5.onclick = function(){
+				b1.style.display = "none";
+				b2.style.display = "none";
+				b3.style.display = "none";
+				b4.style.display = "none";
+				b5.style.display = "block";
+			}
+			
+			window.addEventListener('click', function(event) {
+				if (event.target == box1) {
+			        b1.style.display = "block";}
+			});
+			window.addEventListener('click', function(event) {
+				if (event.target == box2) {
+			        b2.style.display = "block";}
+			});
+			window.addEventListener('click', function(event) {
+				if (event.target == box3) {
+			        b3.style.display = "block";}
+			});
 	
 	
 	

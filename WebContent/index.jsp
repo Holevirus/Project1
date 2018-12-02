@@ -511,6 +511,58 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	
 <div class = "bg4" id = "supps" >
 	<h2 class = "subtitle">Supplements</h2>
+	
+	<!-- The grid: three columns -->
+	<!-- Three columns -->
+<div class="suppRow">
+  <div class="columnsupp" id ="box1" onclick="openTab('b1');" style="background:green;">
+    Box 1
+  </div>
+  <div class="columnsupp" id ="box2" onclick="openTab('b2');" style="background:blue;">
+    Box 2
+  </div>
+  <div class="columnsupp" id = "box3" onclick="openTab('b3');" style="background:red;">
+    Box 3
+  </div>
+  <div class="columnsupp" id = "box4" onclick="openTab('b4');" style="background:purple;">
+    Box 4
+  </div>
+  <div class="columnsupp" id = "box5" onclick="openTab('b5');" style="background:yellow;">
+    Box 5
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="background:green">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 1</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b2" class="containerTab" style="background:blue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 2</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b3" class="containerTab" style = "background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 3</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b4" class="containerTab" style = "background:purple">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 4</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b5" class="containerTab" style = "background:yellow">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 5</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+	
 </div>
 
 <div class = "bg5" id = "about" >

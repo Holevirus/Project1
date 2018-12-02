@@ -458,8 +458,11 @@ body, html {
 }
 .containerTab{
 	display:none;
+	overflow: hidden;
+	max-height: 70%;
 }
 .fit{
 	width: 100%;
 	border: solid black 4px;
+	overflow: hidden;
 }

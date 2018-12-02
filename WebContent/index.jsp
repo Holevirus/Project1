@@ -22,22 +22,6 @@ newList = meta.getTableMetadata();
 } catch (SQLException e){
 	System.out.println(e.getMessage());
 }
-	
-/*
-
-	ArrayList<String> returnValues = new ArrayList<String>();
-	for( int r = 0; r < newList.size(); r ++){
-		//System.out.println(newList.get(r).get(0));
-		if (newList.get(r).get(0).toString().toLowerCase().equals(tName)){
-			for(int i = 1; i < newList.get(r).size(); i ++){
-				returnValues.add((String)newList.get(r).get(i));
-			}
-		}
-		
-	}
-	*/
-
-
 
 %>
 
@@ -59,9 +43,9 @@ newList = meta.getTableMetadata();
 <div class = "stick">
 	<div class="topnav" id = "topnav">
 	  <a href="#main">Main</a>
-	  <a href="#about">About</a>
 	  <a href="#plans">Plans</a>
 	  <a href="#supps">Supplements</a>
+	  <a href="#about">About</a>
 	  <a href="#">Contact</a>
 	</div>
 </div>
@@ -82,7 +66,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 <!-- <div class = "space">
 </div> -->
 
-<div class = "bg2" id = "about" >
+<div class = "bg2" id = "asdf" >
 	<h2 class = "subtitle">About</h2>
 	<h3 class ="subtitle">Business Stuff</h3>
 </div>
@@ -321,8 +305,17 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 </div>
 
 <div class = "bg5" id = "about" >
-	<h2 class = "subtitle">About</h2>
-	<h3 class ="subtitle">Business Stuff</h3>
+	<h2 class = "subtitle">Meet the Creators</h2>
+		<table class="creators">
+			<tr>
+				<th>
+					<p>Sean Joyce</p>
+				</th>
+				<th>
+					<p>Tyler Iverson</p>
+				</th>
+			</tr>
+		</table>
 </div>
 
 

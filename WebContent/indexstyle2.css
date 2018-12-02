@@ -176,10 +176,15 @@ body, html {
 	
 }
 .bg5 {
-	background-image: url("Pics/pullup.jpg");
-	
+	background-image: url("Pics/barbell.jpg");
+	content-align:center;
 	height: 100%;
+	margin: auto;
 	
+}
+.creators{
+	background-color:red;
+	width: 85%;
 }
 /* The Modal (background) */
 .modal, .modal2, .modal3 {

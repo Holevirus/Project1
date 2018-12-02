@@ -57,7 +57,7 @@ public class Meta {
 		}
 		
 		while (rs2.next()) {
-			returnValues.add((String) rs2.getObject(column));
+			returnValues.add(rs2.getObject(column).toString());
 			
 		}
 		
@@ -132,7 +132,7 @@ public class Meta {
 			//System.out.println(newList.get(r).get(0));
 			if (tables.get(r).get(0).toString().toLowerCase().equals(tName.toLowerCase())){
 				for(int i = 1; i < tables.get(r).size(); i ++){
-					returnValues.add((String) tables.get(r).get(i));
+					returnValues.add((String) tables.get(r).get(i).toString());
 				}
 			}
 			
@@ -153,7 +153,7 @@ public class Meta {
 			ArrayList<String> temp = new ArrayList<String>();
 			try {
 				for(String value : valuePull(tName,cName)) {
-					temp.add(value);
+					temp.add(value.toString());
 				}
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block

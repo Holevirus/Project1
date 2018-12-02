@@ -180,7 +180,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 				
 				<%
 				// for every column
-				ArrayList<ArrayList> mealList = meta.blockBuilder("DailyMealPlan");
+				ArrayList<ArrayList> mealList = meta.blockBuilder("dailymealplan");
 				
 				for(ArrayList<String> row : mealList){
 					out.print("<tr>");
@@ -273,12 +273,35 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 		    </div>
 		    <div class = "modal-background1-2" id = "meal">
 		    	<!--  PAGE 2 -->
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
+			    	<table class = "data" border="1">
+				<tr>
+					<th>Name</th>
+					<th>Calorie Count</th>
+					<th>Protein Count</th>
+					<th>Carb Count</th>
+					<th>Meals Per Day</th>
+				</tr>
+				
+				<%
+				// for every column
+				ArrayList<ArrayList> mealList2 = meta.blockBuilder("dailymealplan");
+				
+				for(ArrayList<String> row : mealList2){
+					out.print("<tr>");
+					for(String value : row){
+						out.print("<td>");
+						out.print(value);
+						out.print("</td>");
+						
+					}
+					out.print("</tr>");
+				}
+			
+				
+					//for every value in that column
+				System.out.println();
+				%>
+				</table>
 		    	
 		    </div>
 		    <div class = "modal-background1-2" id = "supp">
@@ -353,12 +376,35 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 		    </div>
 		    <div class = "modal-background1-2" id = "meal">
 		    	<!--  PAGE 2 -->
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
+			    	<table class = "data" border="1">
+				<tr>
+					<th>Name</th>
+					<th>Calorie Count</th>
+					<th>Protein Count</th>
+					<th>Carb Count</th>
+					<th>Meals Per Day</th>
+				</tr>
+				
+				<%
+				// for every column
+				ArrayList<ArrayList> mealList3 = meta.blockBuilder("dailymealplan");
+				
+				for(ArrayList<String> row : mealList3){
+					out.print("<tr>");
+					for(String value : row){
+						out.print("<td>");
+						out.print(value);
+						out.print("</td>");
+						
+					}
+					out.print("</tr>");
+				}
+			
+				
+					//for every value in that column
+				System.out.println();
+				%>
+				</table>
 		    	
 		    </div>
 		    <div class = "modal-background1-2" id = "supp">

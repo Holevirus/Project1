@@ -124,17 +124,17 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	<div class="modal-content">
 	  <div class="modal-header">
 	    <span class="close">&times;</span>
-	    <div class="topnav">
-		  <a href="#home">Workout Plan</a>
-		  <a href="#meal">Daily Meal Plan</a>
-		  <a href="#supp">Supplement Plan</a>
-		</div>
+		    <div class="topnav">
+			  <a href="#home">Workout Plan</a>
+			  <a href="#meal">Daily Meal Plan</a>
+			  <a href="#supp">Supplement Plan</a>
+			</div>
 	    <h2>Power Lifting</h2>
 	  </div>
-	  <div class="modal-body">
-	    <p>Power Lifting Stuff</p>
-	    <p>Some other text...</p>
-	    	<h1>Retrieve data from database in jsp</h1>
+	 <div class="modal-body">
+		    <div class = "modal-background1-1" id = "home">
+		    	<!--  PAGE 1 -->
+		    	<h1>Retrieve data from database in jsp</h1>
 			<table class = "data" border="1">
 			<tr>
 				<th>Workout Plan</th>
@@ -148,9 +148,9 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 			
 			<%
 			// for every column
-			ArrayList<ArrayList> tempList = meta.blockBuilder("workoutplan");
+			ArrayList<ArrayList> tempList1 = meta.blockBuilder("workoutplan");
 			
-			for(ArrayList<String> row : tempList){
+			for(ArrayList<String> row : tempList1){
 				out.print("<tr>");
 				for(String value : row){
 					out.print("<td>");
@@ -166,6 +166,53 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 			System.out.println();
 			%>
 			</table>
+		    </div>
+		    <div class = "modal-background1-2" id = "meal">
+		    	<!--  PAGE 2 -->
+			    	<table class = "data" border="1">
+				<tr>
+					<th>Name</th>
+					<th>Calorie Count</th>
+					<th>Protein Count</th>
+					<th>Carb Count</th>
+					<th>Meals Per Day</th>
+				</tr>
+				
+				<%
+				// for every column
+				ArrayList<ArrayList> mealList = meta.blockBuilder("DailyMealPlan");
+				
+				for(ArrayList<String> row : mealList){
+					out.print("<tr>");
+					for(String value : row){
+						out.print("<td>");
+						out.print(value);
+						out.print("</td>");
+						
+					}
+					out.print("</tr>");
+				}
+			
+				
+					//for every value in that column
+				System.out.println();
+				%>
+				</table>
+		    	
+		    </div>
+		    <div class = "modal-background1-2" id = "supp">
+		    	<!--  PAGE 3 -->
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	
+		    	<p>stuff</p>
+		    </div>
 	  </div>
 	  <div class="modal-footer">
 	    <h3>Increase Mass and Strength</h3>
@@ -232,21 +279,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 		    	<p>stuff</p>
 		    	<p>stuff</p>
 		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
+		    	
 		    </div>
 		    <div class = "modal-background1-2" id = "supp">
 		    	<!--  PAGE 3 -->
@@ -258,18 +291,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 		    	<p>stuff</p>
 		    	<p>stuff</p>
 		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
+		    	
 		    	<p>stuff</p>
 		    </div>
 	  </div>
@@ -294,14 +316,61 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	    <h2>Running/Cardio</h2>
 	  </div>
 	  <div class="modal-body">
-	    <p>Running Stuff</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
-	    <p>Some other text...</p>
+		    <div class = "modal-background1-1" id = "home">
+		    	<!--  PAGE 1 -->
+		    	<h1>Retrieve data from database in jsp</h1>
+			<table class = "data" border="1">
+				<tr>
+					<th>Workout Plan</th>
+					<th>Number of Workouts per day</th>
+					<th>Goal</th>
+					<th>Intensity Rating</th>
+					<th>Length</th>
+					<th>Author</th>
+					<th>Equip Needed</th>
+				</tr>
+				
+				<%
+				// for every column
+				ArrayList<ArrayList> tempList3 = meta.blockBuilder("workoutplan");
+				
+				for(ArrayList<String> row : tempList3){
+					out.print("<tr>");
+					for(String value : row){
+						out.print("<td>");
+						out.print(value);
+						out.print("</td>");
+						
+					}
+					out.print("</tr>");
+				}
+			
+				
+					//for every value in that column
+				System.out.println();
+				%>
+			</table>
+		    </div>
+		    <div class = "modal-background1-2" id = "meal">
+		    	<!--  PAGE 2 -->
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	
+		    </div>
+		    <div class = "modal-background1-2" id = "supp">
+		    	<!--  PAGE 3 -->
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	<p>stuff</p>
+		    	
+		    </div>
 	  </div>
 	  <div class="modal-footer">
 	    <h3>Lose some weight</h3>

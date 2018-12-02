@@ -22,6 +22,12 @@ html {
   top: 0;
   width: 100%
 }
+.stickmodal{
+	position: fixed;
+  	top: 20;
+  	width: 80%
+}
+
 /* Three columns side by side */
 .column {
     /*float: left;*/

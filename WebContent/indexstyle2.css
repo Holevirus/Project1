@@ -15,7 +15,7 @@ html {
 	padding-top: 25px;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+  /*box-sizing: inherit;*/
 }
 .stick {
   position: fixed;
@@ -49,6 +49,7 @@ html {
 /* Some left and right padding inside the container */
 .container {
     padding: 0 18px;
+    max-height: 85%;
 }
 
 /* Clear floats */
@@ -138,6 +139,13 @@ body, html {
     height: 100%;
     margin: 0;
 }
+.bg, .bg2, .bg3, .bg4, .bg5 {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 25px;
+	margin: auto;
+}
 .bg {
     /* The image used */
     background-image: url("Pics/summit.jpg");
@@ -145,10 +153,7 @@ body, html {
     /* Full height */
     height: 120%; 
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+   
     
 }
 .bg2 {
@@ -157,20 +162,24 @@ body, html {
 	
 	height: 100%;
 	
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-top: 15px;
 }
 .bg3 {
 	background-image: url("Pics/pullup.jpg");
 	
 	height: 100%;
 	
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding-top: 27px;
+}	
+.bg4 {
+	background-image: url("Pics/vitamins.jpg");
+	
+	height: 100%;
+	
+}
+.bg5 {
+	background-image: url("Pics/pullup.jpg");
+	
+	height: 100%;
+	
 }
 /* The Modal (background) */
 .modal, .modal2, .modal3 {

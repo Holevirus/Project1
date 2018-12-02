@@ -44,6 +44,7 @@ newList = meta.getTableMetadata();
 <div class = "stick">
 	<div class="topnav" id = "topnav">
 	  <a href="#main">Main</a>
+	  <a href="#mission">Motivation</a>
 	  <a href="#plans">Plans</a>
 	  <a href="#supps">Supplements</a>
 	  <a href="#about">About</a>
@@ -67,7 +68,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 <!-- <div class = "space">
 </div> -->
 
-<div class = "bg2" id = "asdf" >
+<div class = "bg2" id = "mission" >
 	<h2 class = "subtitle">Mission Statement</h2>
 	 <table class = "stuff">
 		 <tr>

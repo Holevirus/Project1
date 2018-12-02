@@ -12,3 +12,5 @@ build/classes/Well/WellnessForm.class
 WebContent/index.jsp
 src/Well/DBconnection.java
 src/Well/DBconnection.java
+build/classes/Well/DBconnection.class
+src/Well/DBconnection.java

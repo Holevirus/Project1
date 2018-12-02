@@ -516,23 +516,23 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	<!-- The grid: three columns -->
 	<!-- Three columns -->
 <table class = "fit">
-	<div class="suppRow">
-	  <div class="columnsupp" id ="box1" onclick="openTab('b1');" style="background:green;">
+	<tr class="suppRow">
+	  <td class="columnsupp" id ="box1" onclick="openTab('b1');" style="background:#333;">
 	    Box 1
-	  </div>
-	  <div class="columnsupp" id ="box2" onclick="openTab('b2');" style="background:blue;">
+	  </td>
+	  <td class="columnsupp" id ="box2" onclick="openTab('b2');" style="background:#333;">
 	    Box 2
-	  </div>
-	  <div class="columnsupp" id = "box3" onclick="openTab('b3');" style="background:red;">
+	  </td>
+	  <td class="columnsupp" id = "box3" onclick="openTab('b3');" style="background:#333;">
 	    Box 3
-	  </div>
-	  <div class="columnsupp" id = "box4" onclick="openTab('b4');" style="background:purple;">
+	  </td>
+	  <td class="columnsupp" id = "box4" onclick="openTab('b4');" style="background:#333;">
 	    Box 4
-	  </div>
-	  <div class="columnsupp" id = "box5" onclick="openTab('b5');" style="background:yellow;">
+	  </td>
+	  <td class="columnsupp" id = "box5" onclick="openTab('b5');" style="background:#333;">
 	    Box 5
-	  </div>
-	</div>
+	  </td>
+	</tr>
 </table>
 <!-- Full-width columns: (hidden by default) -->
 <div id="b1" class="containerTab" style="background:green">

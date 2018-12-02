@@ -328,10 +328,33 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 			</tr>
 			<tr class = "lifeData">
 				<td class = "each">
-				 <p>Sean Joyce </p>
+				 <p>
+				 	Started his Fitness Lifestyle: 5 Years Ago 
+				 	<br>
+				 	Favorite Workout: Lats and Biceps 
+				 	<br>
+				 	Least Favorite Workout: Cardio  
+				 	<br>
+				 	Workouts Per Week: 6
+				 	<br>
+				 	
+				 					 
+				 	
+				 	
+				 
+				 </p>
 				</td>
 				<td class = "each">
-				 <p>asdf</p>
+				 <p>
+				 	Started his Fitness Lifestyle: 8 Years Ago 
+				 	<br>
+				 	Favorite Workout: Chest and Shoulders
+				 	<br>
+				 	Least Favorite Workout: Abs  
+				 	<br>
+				 	Workouts Per Week: 6
+				 	<br>
+				 	</p>
 				</td>
 			</tr>
 		</table>

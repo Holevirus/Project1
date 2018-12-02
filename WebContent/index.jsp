@@ -326,6 +326,14 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 					<p>Tyler Iverson</p>
 				</th>
 			</tr>
+			<tr class = "lifeData">
+				<td class = "each">
+				 <p>Sean Joyce </p>
+				</td>
+				<td class = "each">
+				 <p>asdf</p>
+				</td>
+			</tr>
 		</table>
 </div>
 

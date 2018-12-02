@@ -177,14 +177,31 @@ body, html {
 }
 .bg5 {
 	background-image: url("Pics/barbell.jpg");
-	content-align:center;
+	align-content:center;
 	height: 100%;
 	margin: auto;
 	
 }
 .creators{
-	background-color:red;
+	background-color: #333;
+	color: white;
 	width: 85%;
+	margin: auto;
+	height: 80%;
+	border: 5px solid #333;
+	font-size: 20px;
+	
+}
+.each{
+		border: 5px solid #333;
+		padding: 15px;
+}
+.lifeData{
+	height: 95%;
+	background-color: white;
+	color: #333;
+	border: 5px solid #333;
+	
 }
 /* The Modal (background) */
 .modal, .modal2, .modal3 {

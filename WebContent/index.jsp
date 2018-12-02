@@ -137,8 +137,8 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	      <div class="container">
 	        <h2>Olympic Lifts</h2>
 	        <p class="title">Hello</p>
-	        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-	        <p>lifting stuff</p>
+	        <p>Olympic lifts are a great way to get full body strength becauase of the activation of more than 1 muscle group.</p>
+	        <p>It's important to incorporate Olympic lift</p>
 	      </div>
 	    </div>
 	  </td>

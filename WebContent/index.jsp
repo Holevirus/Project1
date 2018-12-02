@@ -135,10 +135,10 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	    <p>Power Lifting Stuff</p>
 	    <p>Some other text...</p>
 	    	<h1>Retrieve data from database in jsp</h1>
-			<table border="1">
+			<table class = "data" border="1">
 			<tr>
 				<th>Workout Plan</th>
-				<th>#WOperDay</th>
+				<th>Number of Workouts per day</th>
 				<th>Goal</th>
 				<th>Intensity Rating</th>
 				<th>Length</th>
@@ -189,31 +189,42 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	  </div>
 	<!-- Content in the modal -->
 	  <div class="modal-body">
-		    <div class = "modal-background1-1">
+		    <div class = "modal-background1-1" id = "home">
 		    	<!--  PAGE 1 -->
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
+		    	<h1>Retrieve data from database in jsp</h1>
+			<table class = "data" border="1">
+			<tr>
+				<th>Workout Plan</th>
+				<th>Number of Workouts per day</th>
+				<th>Goal</th>
+				<th>Intensity Rating</th>
+				<th>Length</th>
+				<th>Author</th>
+				<th>Equip Needed</th>
+			</tr>
+			
+			<%
+			// for every column
+			ArrayList<ArrayList> tempList2 = meta.blockBuilder("workoutplan");
+			
+			for(ArrayList<String> row : tempList2){
+				out.print("<tr>");
+				for(String value : row){
+					out.print("<td>");
+					out.print(value);
+					out.print("</td>");
+					
+				}
+				out.print("</tr>");
+			}
+		
+			
+				//for every value in that column
+			System.out.println();
+			%>
+			</table>
 		    </div>
-		    <div class = "modal-background1-2">
+		    <div class = "modal-background1-2" id = "meal">
 		    	<!--  PAGE 2 -->
 		    	<p>stuff</p>
 		    	<p>stuff</p>
@@ -237,7 +248,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 		    	<p>stuff</p>
 		    	<p>stuff</p>
 		    </div>
-		    <div class = "modal-background1-2">
+		    <div class = "modal-background1-2" id = "supp">
 		    	<!--  PAGE 3 -->
 		    	<p>stuff</p>
 		    	<p>stuff</p>

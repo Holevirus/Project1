@@ -244,7 +244,7 @@ body, html {
 .modal-content {
     position: relative;
     background-color: #fefefe;
-    margin: 50%;
+    margin: auto;
     padding: 0;
     border: 1px solid #888;
     width: 80%;
@@ -260,10 +260,10 @@ body, html {
 }
 .modal-background1-1,.modal-background1-2,.modal-background1-3{
 	background-position: center;
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 25px;
-	margin: 50%;
+	margin: auto;
 }
 .modal-background1-1,.modal-background1-2,.modal-background1-3{
 	background-image: url("Pics/background.jpg");

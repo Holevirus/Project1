@@ -160,10 +160,6 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 				}
 				out.print("</tr>");
 			}
-		
-			
-				//for every value in that column
-			System.out.println();
 			%>
 			</table>
 		    </div>
@@ -193,9 +189,6 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 					out.print("</tr>");
 				}
 			
-				
-					//for every value in that column
-				System.out.println();
 				%>
 				</table>
 		    	
@@ -265,9 +258,6 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 				out.print("</tr>");
 			}
 		
-			
-				//for every value in that column
-			System.out.println();
 			%>
 			</table>
 		    </div>
@@ -344,10 +334,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 					}
 					out.print("</tr>");
 				}
-			
-				
-					//for every value in that column
-				System.out.println();
+		
 				%>
 			</table>
 		    </div>

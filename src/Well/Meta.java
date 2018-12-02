@@ -130,7 +130,7 @@ public class Meta {
 		ArrayList<String> returnValues = new ArrayList<String>();
 		for( int r = 0; r < tables.size(); r ++){
 			//System.out.println(newList.get(r).get(0));
-			if (tables.get(r).get(0).toString().toLowerCase().equals(tName)){
+			if (tables.get(r).get(0).toString().toLowerCase().equals(tName.toLowerCase())){
 				for(int i = 1; i < tables.get(r).size(); i ++){
 					returnValues.add((String) tables.get(r).get(i));
 				}

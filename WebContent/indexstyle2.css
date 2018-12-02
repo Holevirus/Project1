@@ -301,12 +301,7 @@ body, html {
 	padding-top: 25px;
 	margin: auto;
 }
-.modal-background1-1,.modal-background1-2,.modal-background1-3{
-	background-image: url("Pics/background.jpg");
-	
-	height: 100%;
-	
-}
+
 .data {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;

@@ -602,6 +602,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 			</tr>
 			<tr class = "lifeData">
 				<td class = "each">
+				<img id = "img" src="Pics/joy.JPG" alt="sleepy">
 				 <p>
 				 	Started his Fitness Lifestyle: 5 Years Ago 
 				 	<br>
@@ -619,6 +620,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 				 </p>
 				</td>
 				<td class = "each">
+				<img id = "img" src="Pics/ivy.JPG" alt="sleepy">
 				 <p>
 				 	Started his Fitness Lifestyle: 8 Years Ago 
 				 	<br>

@@ -163,7 +163,6 @@ public class Meta {
 			
 		}
 		int listSize = xBYx.size();
-		System.out.println(listSize);
 		ArrayList<String> temp = null;
 		
 		int check = 0;

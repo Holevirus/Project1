@@ -75,10 +75,11 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 			 <div class="flip-box">
 			  <div class="flip-box-inner">
 			    <div class="flip-box-front">
-			      <h2>Front Side</h2>
+			      <h1>Why Wellness?</h1>
 			    </div>
 			    <div class="flip-box-back">
-			      <h2>Back Side</h2>
+			      <h2>We want everyone to be the very best they can be! Our over-arching goal is one of great significance
+			      		and positivity.</h2>
 			    </div>
 			  </div>
 			</div>
@@ -87,10 +88,11 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 			 <div class="flip-box2">
 			  <div class="flip-box-inner2">
 			    <div class="flip-box-front2">
-			      <h2>Front Side</h2>
+			      <h1>Our Goal?</h1>
 			    </div>
 			    <div class="flip-box-back2">
-			      <h2>Back Side</h2>
+			      <h2>Our goal is to give people the option to be healthy and give them the correct tools.
+			      		We want our website to help you reach the goals you've always wanted to reach.</h2>
 			    </div>
 			  </div>
 			</div>
@@ -99,10 +101,12 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 			 <div class="flip-box3">
 			  <div class="flip-box-inner3">
 			    <div class="flip-box-front3">
-			      <h2>Front Side</h2>
+			      <h1>Our Promise?</h1>
 			    </div>
 			    <div class="flip-box-back3">
-			      <h2>Back Side</h2>
+			      <h2>We promise you that our website is the very very very best tool to help you reach your goal. 
+			      		We would place our literal lives on the living fact that our website is the single
+			      		greatest tool for wellness.</h2>
 			    </div>
 			  </div>
 			</div>

@@ -369,10 +369,22 @@ body, html {
 .flip-box-front,
 .flip-box-front2,
 .flip-box-front3 {
-  background-color: #bbb;
+  background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 25px;
+	margin: auto;
   color: black;
 }
-
+.flip-box-front{
+	background-image: url("Pics/wellness2.jpg");
+}
+.flip-box-front2{
+	background-image: url("Pics/goal.jpg");
+}
+.flip-box-front3{
+	background-image: url("Pics/promise.jpg");
+}
 /* Style the back side */
 .flip-box-back,
 .flip-box-back2,

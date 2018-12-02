@@ -165,46 +165,62 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 		    </div>
 		    <div class = "modal-background1-2" id = "meal">
 		    	<!--  PAGE 2 -->
-			    	<table class = "data" border="1">
-				<tr>
-					<th>Name</th>
-					<th>Calorie Count</th>
-					<th>Protein Count</th>
-					<th>Carb Count</th>
-					<th>Meals Per Day</th>
-				</tr>
-				
-				<%
-				// for every column
-				ArrayList<ArrayList> mealList = meta.blockBuilder("dailymealplan");
-				
-				for(ArrayList<String> row : mealList){
-					out.print("<tr>");
-					for(String value : row){
-						out.print("<td>");
-						out.print(value);
-						out.print("</td>");
+			    <table class = "data" border="1">
+					<tr>
+						<th>Name</th>
+						<th>Calorie Count</th>
+						<th>Protein Count</th>
+						<th>Carb Count</th>
+						<th>Meals Per Day</th>
+					</tr>
+					
+					<%
+						// for every column
+						ArrayList<ArrayList> mealList = meta.blockBuilder("dailymealplan");
 						
-					}
-					out.print("</tr>");
-				}
-			
-				%>
+						for(ArrayList<String> row : mealList){
+							out.print("<tr>");
+							for(String value : row){
+								out.print("<td>");
+								out.print(value);
+								out.print("</td>");
+								
+							}
+							out.print("</tr>");
+						}
+					
+					%>
 				</table>
 		    	
 		    </div>
 		    <div class = "modal-background1-2" id = "supp">
 		    	<!--  PAGE 3 -->
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	
-		    	<p>stuff</p>
+		    	 <table class = "data" border="1">
+					<tr>
+						<th>Name</th>
+						<th>Supplement Count</th>
+						<th>Protein Total</th>
+						<th>Caffeine Total</th>
+						<th>Creatine Total</th>
+					</tr>
+					
+					<%
+						// for every column
+						ArrayList<ArrayList> suppList = meta.blockBuilder("supplementplan");
+						
+						for(ArrayList<String> row : suppList){
+							out.print("<tr>");
+							for(String value : row){
+								out.print("<td>");
+								out.print(value);
+								out.print("</td>");
+								
+							}
+							out.print("</tr>");
+						}
+					
+					%>
+				</table>
 		    </div>
 	  </div>
 	  <div class="modal-footer">
@@ -263,49 +279,65 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 		    </div>
 		    <div class = "modal-background1-2" id = "meal">
 		    	<!--  PAGE 2 -->
-			    	<table class = "data" border="1">
-				<tr>
-					<th>Name</th>
-					<th>Calorie Count</th>
-					<th>Protein Count</th>
-					<th>Carb Count</th>
-					<th>Meals Per Day</th>
-				</tr>
-				
-				<%
-				// for every column
-				ArrayList<ArrayList> mealList2 = meta.blockBuilder("dailymealplan");
-				
-				for(ArrayList<String> row : mealList2){
-					out.print("<tr>");
-					for(String value : row){
-						out.print("<td>");
-						out.print(value);
-						out.print("</td>");
+			    <table class = "data" border="1">
+					<tr>
+						<th>Name</th>
+						<th>Calorie Count</th>
+						<th>Protein Count</th>
+						<th>Carb Count</th>
+						<th>Meals Per Day</th>
+					</tr>
+					
+					<%
+						// for every column
+						ArrayList<ArrayList> mealList2 = meta.blockBuilder("dailymealplan");
 						
-					}
-					out.print("</tr>");
-				}
-			
-				
-					//for every value in that column
-				System.out.println();
-				%>
+						for(ArrayList<String> row : mealList2){
+							out.print("<tr>");
+							for(String value : row){
+								out.print("<td>");
+								out.print(value);
+								out.print("</td>");
+								
+							}
+							out.print("</tr>");
+						}
+					
+						
+							//for every value in that column
+						System.out.println();
+					%>
 				</table>
 		    	
 		    </div>
 		    <div class = "modal-background1-2" id = "supp">
 		    	<!--  PAGE 3 -->
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	
-		    	<p>stuff</p>
+		    	<table class = "data" border="1">
+					<tr>
+						<th>Name</th>
+						<th>Supplement Count</th>
+						<th>Protein Total</th>
+						<th>Caffeine Total</th>
+						<th>Creatine Total</th>
+					</tr>
+					
+					<%
+						// for every column
+						ArrayList<ArrayList> suppList2 = meta.blockBuilder("supplementplan");
+						
+						for(ArrayList<String> row : suppList2){
+							out.print("<tr>");
+							for(String value : row){
+								out.print("<td>");
+								out.print(value);
+								out.print("</td>");
+								
+							}
+							out.print("</tr>");
+						}
+					
+					%>
+				</table>
 		    </div>
 	  </div>
 	  <div class="modal-footer">
@@ -396,12 +428,32 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 		    </div>
 		    <div class = "modal-background1-2" id = "supp">
 		    	<!--  PAGE 3 -->
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
-		    	<p>stuff</p>
+		    	<table class = "data" border="1">
+					<tr>
+						<th>Name</th>
+						<th>Supplement Count</th>
+						<th>Protein Total</th>
+						<th>Caffeine Total</th>
+						<th>Creatine Total</th>
+					</tr>
+					
+					<%
+						// for every column
+						ArrayList<ArrayList> suppList3 = meta.blockBuilder("supplementplan");
+						
+						for(ArrayList<String> row : suppList3){
+							out.print("<tr>");
+							for(String value : row){
+								out.print("<td>");
+								out.print(value);
+								out.print("</td>");
+								
+							}
+							out.print("</tr>");
+						}
+					
+					%>
+				</table>
 		    	
 		    </div>
 	  </div>

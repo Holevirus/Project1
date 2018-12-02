@@ -46,7 +46,7 @@ public class DBconnection {
 			//Class.forName("com.mysql.jbdc.Driver").newInstance();
 			
 			try {			
-				dbconn = DriverManager.getConnection(dbPath,"root","toor");
+				dbconn = DriverManager.getConnection(dbPath,"root","Diomary-8");
 				System.out.println("gain the connection");
 				return dbconn;
 			}

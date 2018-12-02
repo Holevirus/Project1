@@ -69,6 +69,13 @@ newList = meta.getTableMetadata();
 <div class="main" id = "main">
   <h1>Wellness Plans</h1><br>
 </div>
+
+ <h2 class = "subtitle">
+ Wellness is something that you choose to pursue. It’s a choice you make in life that requires constant effort to achieve.
+While associated with a healthy lifestyle, wellness goes beyond the confines of general health. It encompasses a positive outlook on your mind, body, and soul and is something we often have more control over than health.
+Wellness has various dimensions and can be viewed a quality, state, or process.
+ </h2>
+
 </div>
 
 

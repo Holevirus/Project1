@@ -46,7 +46,7 @@ newList = meta.getTableMetadata();
 	  <a href="#plans">Plans</a>
 	  <a href="#supps">Supplements</a>
 	  <a href="#about">About</a>
-	  <a href="#">Contact</a>
+	  <a href="#contact">Contact</a>
 	</div>
 </div>
 <!-- Page content -->
@@ -460,6 +460,10 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 				</td>
 			</tr>
 		</table>
+</div>
+
+<div class = "bg6" id = "contact" >
+	<h2 class = "subtitle">Contact</h2>
 </div>
 
 

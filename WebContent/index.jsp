@@ -210,7 +210,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 		    	<!--  PAGE 2 -->
 			    <table class = "data" border="1">
 					<tr>
-						<th>Name</th>
+						<th>Meal Plan</th>
 						<th>Calorie Count</th>
 						<th>Protein Count</th>
 						<th>Carb Count</th>
@@ -240,7 +240,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 		    	<!--  PAGE 3 -->
 		    	 <table class = "data" border="1">
 					<tr>
-						<th>Name</th>
+						<th>Supplement Plan</th>
 						<th>Supplement Count</th>
 						<th>Protein Total</th>
 						<th>Caffeine Total</th>
@@ -324,7 +324,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 		    	<!--  PAGE 2 -->
 			    <table class = "data" border="1">
 					<tr>
-						<th>Name</th>
+						<th>Meal Plan</th>
 						<th>Calorie Count</th>
 						<th>Protein Count</th>
 						<th>Carb Count</th>
@@ -357,7 +357,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 		    	<!--  PAGE 3 -->
 		    	<table class = "data" border="1">
 					<tr>
-						<th>Name</th>
+						<th>Supplement Plan</th>
 						<th>Supplement Count</th>
 						<th>Protein Total</th>
 						<th>Caffeine Total</th>

@@ -330,8 +330,8 @@ body, html {
 .flip-box2,
 .flip-box3  {
   background-color: transparent;
-  width: 33%;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -383,9 +383,12 @@ body, html {
 }
 .stuff {
 	width: 100%;
+	height: 50%;
 	margin: auto;
+	border: 3px solid black;
 }
 .stuff td{
 	width: 33%;
 	margin: auto;
+	border: 3px solid black;
 }

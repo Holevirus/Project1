@@ -60,46 +60,6 @@ newList = meta.getTableMetadata();
 While associated with a healthy lifestyle, wellness goes beyond the confines of general health. It encompasses a positive outlook on your mind, body, and soul and is something we often have more control over than health.
 Wellness has various dimensions and can be viewed a quality, state, or process.
  </h2>
- <table class = "stuff">
- <tr>
- <td>
-	 <div class="flip-box">
-	  <div class="flip-box-inner">
-	    <div class="flip-box-front">
-	      <h2>Front Side</h2>
-	    </div>
-	    <div class="flip-box-back">
-	      <h2>Back Side</h2>
-	    </div>
-	  </div>
-	</div>
- </td>
- <td>
-	 <div class="flip-box2">
-	  <div class="flip-box-inner2">
-	    <div class="flip-box-front2">
-	      <h2>Front Side</h2>
-	    </div>
-	    <div class="flip-box-back2">
-	      <h2>Back Side</h2>
-	    </div>
-	  </div>
-	</div>
-</td>
-  <td>
-	 <div class="flip-box3">
-	  <div class="flip-box-inner3">
-	    <div class="flip-box-front3">
-	      <h2>Front Side</h2>
-	    </div>
-	    <div class="flip-box-back3">
-	      <h2>Back Side</h2>
-	    </div>
-	  </div>
-	</div>
- </td>
-</tr>
-</table>
 
 </div>
 
@@ -108,8 +68,47 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 </div> -->
 
 <div class = "bg2" id = "asdf" >
-	<h2 class = "subtitle">About</h2>
-	<h3 class ="subtitle">Business Stuff</h3>
+	<h2 class = "subtitle">Mission Statement</h2>
+	 <table class = "stuff">
+		 <tr>
+		 <td>
+			 <div class="flip-box">
+			  <div class="flip-box-inner">
+			    <div class="flip-box-front">
+			      <h2>Front Side</h2>
+			    </div>
+			    <div class="flip-box-back">
+			      <h2>Back Side</h2>
+			    </div>
+			  </div>
+			</div>
+		 </td>
+		 <td>
+			 <div class="flip-box2">
+			  <div class="flip-box-inner2">
+			    <div class="flip-box-front2">
+			      <h2>Front Side</h2>
+			    </div>
+			    <div class="flip-box-back2">
+			      <h2>Back Side</h2>
+			    </div>
+			  </div>
+			</div>
+		</td>
+		  <td>
+			 <div class="flip-box3">
+			  <div class="flip-box-inner3">
+			    <div class="flip-box-front3">
+			      <h2>Front Side</h2>
+			    </div>
+			    <div class="flip-box-back3">
+			      <h2>Back Side</h2>
+			    </div>
+			  </div>
+			</div>
+		 </td>
+		</tr>
+	</table>
 </div>
 <div class = "bg3" id = "plans">
 	<h2 class = "subtitle">Plans</h2>

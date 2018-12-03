@@ -48,20 +48,96 @@ newList = meta.getTableMetadata();
 	  <a href="#plans">Plans</a>
 	  <a href="#supps">Supplements</a>
 	  <a href="#about">About</a>
-	  <a href="#contact">Contact</a>
 	</div>
 </div>
 <!-- Page content -->
 <div class="main" id = "main">
-  <h1>Wellness Plans</h1><br>
+  <h1>
+  	Wellness Plans
+  	<% 
+  		try{
+  			String para = request.getParameter("myparam");
+  			if (para != null && !para.isEmpty()) {
+  				out.print(para);
+  			}
+  		}
+  		catch(NullPointerException e){
+  			
+  		}
+  		
+  		
+  	%>
+  	
+  </h1><br>
 </div>
+<table>
+	<tr>
+		<td>
+			<div class="dropdown">
+			  <button class="dropbtn">Pick a Category</button>
+			  <div class="dropdown-content">
+			    <a href="?plan=workoutplan">Workout Plans</a>
+			    <a href="?plan=supplementplan">Supplement Plans</a>
+			    <a href="?plan=dailymealplan">Meal Plans</a>
+			  </div>
+			</div>
+		</td>
+		<td>
+			<div class="dropdown">
+				<% 
+			  		try{
+			  			String plan = request.getParameter("plan");
+			  			if (plan != null && !plan.isEmpty()) {
+			  				if(plan.equals("workoutplan")){
+			  					out.print("<button class='dropbtn'>Workout Plans</button>");
+				  				out.print("<div class='dropdown-content'>");
+				  				for(String line: meta.valuePull("workoutplan","WorkoutPlan")){
+				  					out.print("<a href='#'>"+line+"</a>");
+				  				}
+			  				}
+			  				if(plan.equals("supplementplan")){
+			  					out.print("<button class='dropbtn'>Supplement Plans</button>");
+				  				out.print("<div class='dropdown-content'>");
+				  				for(String line: meta.valuePull("supplementplan","Name")){
+				  					out.print("<a href='#'>"+line+"</a>");
+				  				}
+			  				}
+			  				if(plan.equals("dailymealplan")){
+			  					out.print("<button class='dropbtn'>Meal Plans</button>");
+				  				out.print("<div class='dropdown-content'>");
+				  				for(String line: meta.valuePull("workoutplan","WorkoutPlan")){
+				  					out.print("<a href='#'>"+line+"</a>");
+				  				}
+			  				}
+			  				
+			  				
+			  		
+			  			}
+			  		}
+			  		catch(NullPointerException e){
+			  			
+			  		}
+			  		
+			  		
+			  	%>
+			  
+			  
+			    
+			    
+			   
+			  </div>
+			</div>
+		</td>
+	</tr>
+</table>
 
+<!--
  <h2 class = "subtitle">
  Wellness is something that you choose to pursue. It’s a choice you make in life that requires constant effort to achieve.
 While associated with a healthy lifestyle, wellness goes beyond the confines of general health. It encompasses a positive outlook on your mind, body, and soul and is something we often have more control over than health.
 Wellness has various dimensions and can be viewed a quality, state, or process.
  </h2>
-
+-->
 </div>
 
 
@@ -797,11 +873,6 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 			</tr>
 		</table>
 </div>
-
-<div class = "bg6" id = "contact" >
-	<h2 class = "subtitle">Contact</h2>
-</div>
-
 
 
 

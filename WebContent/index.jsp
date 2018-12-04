@@ -77,8 +77,8 @@ newList = meta.getTableMetadata();
 	<tr>
 		<td class = "searchColumn">
 			<div class="dropdown">
-			  <button class="dropbtn">Pick a Category</button>
-			  <div class="dropdown-content">
+			  <button class="dropbtn" >Pick a Category</button>
+			  <div class="dropdown-content" >
 			    <a href="?plan=workoutplan">Workout Plans</a>
 			    <a href="?plan=supplementplan">Supplement Plans</a>
 			    <a href="?plan=dailymealplan">Meal Plans</a>
@@ -725,7 +725,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
   
 </div>
 
-<div id="b2" class="containerTab">
+<div id="b2" class="containerTab" style="background-color: white;">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Protein Heavy</h2>
   <table class = "data" border="1">
@@ -768,7 +768,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	</table>
   </div>
 
-<div id="b3" class="containerTab" style = "background:#333">
+<div id="b3" class="containerTab" style="background-color: white;">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Energy Blend</h2>
   <table class = "data" border="1">
@@ -811,7 +811,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	</table>
 </div>
 
-<div id="b4" class="containerTab" style = "background:#333">
+<div id="b4" class="containerTab" style="background-color: white;">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Endurance</h2>
   <table class = "data" border="1">
@@ -854,7 +854,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	</table>
 </div>
 
-<div id="b5" class="containerTab" style = "background:#333">
+<div id="b5" class="containerTab" style="background-color: white;">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>NCAA Approved</h2>
   <table class = "data" border="1">

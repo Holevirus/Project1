@@ -487,8 +487,8 @@ body, html {
 .flip-box-back,
 .flip-box-back2,
 .flip-box-back3 {
-  background-color: dodgerblue;
-  color: white;
+  background-color: lightgray;
+  color: black;
   transform: rotateY(180deg);
 }
 .stuff {

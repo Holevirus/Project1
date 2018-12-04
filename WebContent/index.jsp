@@ -681,7 +681,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	</tr>
 </table>
 <!-- Full-width columns: (hidden by default) -->
-<div id="b1" class="containerTab" style="background:#333">
+<div id="b1" class="containerTab" style="background-color: white;">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Fat Burner</h2>
   <table class = "data" border="1">
@@ -725,7 +725,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
   
 </div>
 
-<div id="b2" class="containerTab" style="background:#333">
+<div id="b2" class="containerTab">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Protein Heavy</h2>
   <table class = "data" border="1">

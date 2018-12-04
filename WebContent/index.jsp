@@ -68,7 +68,7 @@ newList = meta.getTableMetadata();
 			</div>
 		</td>
 		<td>
-			<div>
+			<div class ="bigboy">
 				Search our Wellness Database or Browser Categories Below!
 			</div>
 		</td>
@@ -130,8 +130,28 @@ newList = meta.getTableMetadata();
 			  		try{
 			  			String planD = request.getParameter("planD");
 			  			String plan = request.getParameter("plan");
-			  			
+			  			int counter = 0;
 			  			if (planD != null && !planD.isEmpty()) {
+			  				String table = "";
+			  				String table2 = "";
+			  				if(plan.equals("workoutplan")){
+			  					table = "workout_has_exercise";
+			  					table2 = "exercise";
+			  					
+			  				}
+			  				else if (plan.equals("supplementplan")){
+			  					table = "supplementplan_has_supplement";
+			  					table2 = "supplement";
+			  					counter = 1;
+			  					
+			  				}
+			  				else if (plan.equals("dailymealplan")){
+			  					table = "dailymealplan_has_meal";
+			  					table2 = "meal";
+			  					counter = 1;
+			  					
+			  				}
+			  					
 			  				
 		  					out.print("<button class='dropbtn'>"+planD+"</button>");
 		  					out.print("</div>");
@@ -140,20 +160,20 @@ newList = meta.getTableMetadata();
 		  					out.print("</table>");
 		  					
 			  				
-			  				ArrayList<ArrayList> end = meta.blockBuilder("workout_has_exercise");
+			  				ArrayList<ArrayList> end = meta.blockBuilder(table);
 				  			
 				  			ArrayList<String> temp = new ArrayList<String>();
 				  			String cValue = "";
 				  			for(ArrayList<String> row : end){
 				  				if(row.contains(planD)){
-				  					cValue = row.get(0);
+				  					cValue = row.get(counter);
 				  					temp.add(cValue);
 				  					System.out.println(cValue);
 				  				}
 				  			}
 				  			out.print("<table class = 'sResults'>");
 				  			ArrayList<String> cols = new ArrayList<String>();
-				  			cols = meta.colReturn("exercise");
+				  			cols = meta.colReturn(table2);
 				  			out.print("<tr>");
 				  			for(String col1 : cols){
 				  				
@@ -164,7 +184,7 @@ newList = meta.getTableMetadata();
 				  			}
 				  			
 				  			out.print("</tr>");
-				  			ArrayList<ArrayList> val = meta.blockBuilder("exercise");
+				  			ArrayList<ArrayList> val = meta.blockBuilder(table2);
 				  			for(ArrayList<String> row2 : val){
 				  				if(temp.contains(row2.get(0))){
 				  					out.print("<tr>");

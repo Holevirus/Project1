@@ -48,20 +48,175 @@ newList = meta.getTableMetadata();
 	  <a href="#plans">Plans</a>
 	  <a href="#supps">Supplements</a>
 	  <a href="#about">About</a>
-	  <a href="#contact">Contact</a>
 	</div>
 </div>
 <!-- Page content -->
 <div class="main" id = "main">
-  <h1>Wellness Plans</h1><br>
 </div>
+<table class = "searchTable">
+	<tr>
+		<td>
+			<h1>
+	  			Wellness Plans  	
+	 	 	</h1>
+	 	 <td>
+	</tr>
+	<tr>
+		<td>
+			<div>
+				“Strength does not come from the physical capacity. It comes from an indomitable will.” – Ghandi
+			</div>
+		</td>
+		<td>
+			<div class ="bigboy">
+				Search our Wellness Database or Browser Categories Below!
+			</div>
+		</td>
+		
+	</tr>
+	<tr>
+		<td class = "searchColumn">
+			<div class="dropdown">
+			  <button class="dropbtn">Pick a Category</button>
+			  <div class="dropdown-content">
+			    <a href="?plan=workoutplan">Workout Plans</a>
+			    <a href="?plan=supplementplan">Supplement Plans</a>
+			    <a href="?plan=dailymealplan">Meal Plans</a>
+			  </div>
+			</div>
+		</td>
+		<td class = "searchColumn">
+			<div class="dropdown">
+				<% 
+			  		try{
+			  			String plan = request.getParameter("plan");
+			  			if (plan != null && !plan.isEmpty()) {
+			  				if(plan.equals("workoutplan")){
+			  					out.print("<button class='dropbtn'>Workout Plans</button>");
+				  				out.print("<div class='dropdown-content'>");
+				  				for(String line: meta.valuePull("workoutplan","WorkoutPlan")){
+				  					out.print("<a href='?plan="+plan+"&planD="+line+"'>"+line+"</a>");
+				  				}
+				  				out.print("</div>");
+			  				}
+			  				if(plan.equals("supplementplan")){
+			  					out.print("<button class='dropbtn'>Supplement Plans</button>");
+				  				out.print("<div class='dropdown-content'>");
+				  				for(String line: meta.valuePull("supplementplan","Name")){
+				  					out.print("<a href='?plan="+plan+"&planD="+line+"'>"+line+"</a>");
+				  				}
+				  				out.print("</div>");
+			  				}
+			  				if(plan.equals("dailymealplan")){
+			  					out.print("<button class='dropbtn'>Meal Plans</button>");
+				  				out.print("<div class='dropdown-content'>");
+				  				for(String line: meta.valuePull("dailymealplan","name")){
+				  					out.print("<a href='?plan="+plan+"&planD="+line+"'>"+line+"</a>");
+				  				}
+				  				out.print("</div>");
+			  				}
+			  			}
+			  		}
+			  		catch(NullPointerException e){
+			  			
+			  		}
+			  	%>
+			  </div>
+			</div>
+		</td>
+		<td class = "searchColumn">
+			<div class="dropdown">
+				<% 
+			  		try{
+			  			String planD = request.getParameter("planD");
+			  			String plan = request.getParameter("plan");
+			  			int counter = 0;
+			  			if (planD != null && !planD.isEmpty()) {
+			  				String table = "";
+			  				String table2 = "";
+			  				if(plan.equals("workoutplan")){
+			  					table = "workout_has_exercise";
+			  					table2 = "exercise";
+			  					
+			  				}
+			  				else if (plan.equals("supplementplan")){
+			  					table = "supplementplan_has_supplement";
+			  					table2 = "supplement";
+			  					counter = 1;
+			  					
+			  				}
+			  				else if (plan.equals("dailymealplan")){
+			  					table = "dailymealplan_has_meal";
+			  					table2 = "meal";
+			  					counter = 1;
+			  					
+			  				}
+			  					
+			  				
+		  					out.print("<button class='dropbtn'>"+planD+"</button>");
+		  					out.print("</div>");
+		  					out.print("</td>");
+		  					out.print("</tr>");
+		  					out.print("</table>");
+		  					
+			  				
+			  				ArrayList<ArrayList> end = meta.blockBuilder(table);
+				  			
+				  			ArrayList<String> temp = new ArrayList<String>();
+				  			String cValue = "";
+				  			for(ArrayList<String> row : end){
+				  				if(row.contains(planD)){
+				  					cValue = row.get(counter);
+				  					temp.add(cValue);
+				  				}
+				  			}
+				  			out.print("<table class = 'sResults'>");
+				  			ArrayList<String> cols = new ArrayList<String>();
+				  			cols = meta.colReturn(table2);
+				  			out.print("<tr>");
+				  			for(String col1 : cols){
+				  				
+	  						out.print("<th>");
+	  						out.print(col1);
+	  						out.print("</th>");
+			  	
+				  			}
+				  			
+				  			out.print("</tr>");
+				  			ArrayList<ArrayList> val = meta.blockBuilder(table2);
+				  			for(ArrayList<String> row2 : val){
+				  				if(temp.contains(row2.get(0))){
+				  					out.print("<tr>");
+				  					for(String value : row2){
+				  						out.print("<td class = 'cell1'>");
+				  						out.print(value);
+				  						out.print("</td>");
+				  						
+				  					}
+				  					out.print("</tr>");
+				  						}
+				  					
+				  			}
+				  			out.print("</table>");
+			  			
+			  			}
+			  		}
+			  		catch(NullPointerException e){
+			  			
+			  		}
+			  	%>
+			  </div>
+		</td>
+	</tr>
+</table>
 
+<!--
  <h2 class = "subtitle">
  Wellness is something that you choose to pursue. It’s a choice you make in life that requires constant effort to achieve.
 While associated with a healthy lifestyle, wellness goes beyond the confines of general health. It encompasses a positive outlook on your mind, body, and soul and is something we often have more control over than health.
 Wellness has various dimensions and can be viewed a quality, state, or process.
  </h2>
-
+-->
 </div>
 
 
@@ -124,9 +279,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	      <img src="Pics/power.jpg" alt="Jane" style="width:90%">
 	      <div class="container">
 	        <h2>Power Lifting</h2>
-	        <p class="title">Hello</p>
-	        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-	        <p>Lifting stuff</p>
+	        
 	      </div>
 	    </div>
 	  </td>
@@ -136,10 +289,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	      <img src="Pics/olympic.jpg" alt="Mike" style="width:100%">
 	      <div class="container">
 	        <h2>Olympic Lifts</h2>
-	        <p class="title">Hello</p>
-	        <p>Olympic lifts are a great way to get full body strength becauase of the activation of more than 1 muscle group.</p>
-	        <p>It's important to incorporate Olympic lift</p>
-	      </div>
+	        
 	    </div>
 	  </td>
 	
@@ -148,9 +298,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	      <img src="Pics/running.jpg" alt="John" style="width:100%">
 	      <div class="container">
 	        <h2>Running/Cardio</h2>
-	        <p class="title">Hello</p>
-	        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-	        <p>lifting stuff</p>
+	        
 	      </div>
 	    </div>
 	  </td>
@@ -172,12 +320,12 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 			  <a href="#meal">Daily Meal Plan</a>
 			  <a href="#supp">Supplement Plan</a>
 			</div>
-	    <h2>Power Lifting</h2>
+	    <h2>Quick Overview</h2>
 	  </div>
 	 <div class="modal-body">
 		    <div class = "modal-background1-1" id = "home">
 		    	<!--  PAGE 1 -->
-		    	<h1>Retrieve data from database in jsp</h1>
+		    	<h1>Quick View Some Plans Below</h1>
 			<table class = "data" border="1">
 			<tr>
 				<th>Workout Plan</th>
@@ -533,7 +681,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	</tr>
 </table>
 <!-- Full-width columns: (hidden by default) -->
-<div id="b1" class="containerTab" style="background:#333">
+<div id="b1" class="containerTab" style="background-color: white;">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Fat Burner</h2>
   <table class = "data" border="1">
@@ -577,7 +725,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
   
 </div>
 
-<div id="b2" class="containerTab" style="background:#333">
+<div id="b2" class="containerTab">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
   <h2>Protein Heavy</h2>
   <table class = "data" border="1">
@@ -797,11 +945,6 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 			</tr>
 		</table>
 </div>
-
-<div class = "bg6" id = "contact" >
-	<h2 class = "subtitle">Contact</h2>
-</div>
-
 
 
 

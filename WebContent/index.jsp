@@ -276,7 +276,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	<tr class="row">
 	  <td class="column">
 	    <div class="card">
-	      <img src="Pics/power.jpg" alt="Jane" style="width:90%">
+	      <img src="Pics/power.jpg" alt="Jane" style="width:100%">
 	      <div class="container">
 	        <h2>Power Lifting</h2>
 	        

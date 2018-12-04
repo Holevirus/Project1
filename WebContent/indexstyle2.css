@@ -1,5 +1,5 @@
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -7,19 +7,45 @@
     cursor: pointer;
 }
 
+.searchTable{
+	width: 60%;
+	margin: auto;
+	align-content: center;
+}
+
+.sResults{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    color: black;
+	margin: auto;
+	width: 60%;
+	align-content: center;
+	border: 2px solid black;
+	background-color: white;
+}
+
+
+.searchColumn{
+	width: 30%;
+}
+.cTitle{
+	width: 100%;
+}
+
 .dropdown {
     /*position: relative;
-    display: inline-block;*/
-    margin: auto;
+    display: inline-block;
+    margin: auto;*/
+ 	width: 100%;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    width: 20%;
 }
 
 .dropdown-content a {
@@ -36,7 +62,11 @@
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #c0c0c0;
+}
+.dropbtn {
+    background-color: #333;
+    width: 100%;
 }
 
 .space {
@@ -362,7 +392,7 @@ body, html {
     color: black;
 }
 
-.data td, .data th {
+.data td, .data th, .sResults td, .sResults th{
     border: 1px solid #ddd;
     padding: 8px;
 }
@@ -371,7 +401,7 @@ body, html {
 
 .data tr:hover {background-color: #ddd;}
 
-.data th {
+.data th , .sResults th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;

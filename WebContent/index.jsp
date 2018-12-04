@@ -52,27 +52,30 @@ newList = meta.getTableMetadata();
 </div>
 <!-- Page content -->
 <div class="main" id = "main">
-  <h1>
-  	Wellness Plans
-  	<% 
-  		try{
-  			String para = request.getParameter("myparam");
-  			if (para != null && !para.isEmpty()) {
-  				out.print(para);
-  			}
-  		}
-  		catch(NullPointerException e){
-  			
-  		}
-  		
-  		
-  	%>
-  	
-  </h1><br>
 </div>
-<table>
+<table class = "searchTable">
 	<tr>
 		<td>
+			<h1>
+	  			Wellness Plans  	
+	 	 	</h1>
+	 	 <td>
+	</tr>
+	<tr>
+		<td>
+			<div>
+				“Strength does not come from the physical capacity. It comes from an indomitable will.” – Ghandi
+			</div>
+		</td>
+		<td>
+			<div>
+				Search our Wellness Database or Browser Categories Below!
+			</div>
+		</td>
+		
+	</tr>
+	<tr>
+		<td class = "searchColumn">
 			<div class="dropdown">
 			  <button class="dropbtn">Pick a Category</button>
 			  <div class="dropdown-content">
@@ -82,7 +85,7 @@ newList = meta.getTableMetadata();
 			  </div>
 			</div>
 		</td>
-		<td>
+		<td class = "searchColumn">
 			<div class="dropdown">
 				<% 
 			  		try{
@@ -92,41 +95,98 @@ newList = meta.getTableMetadata();
 			  					out.print("<button class='dropbtn'>Workout Plans</button>");
 				  				out.print("<div class='dropdown-content'>");
 				  				for(String line: meta.valuePull("workoutplan","WorkoutPlan")){
-				  					out.print("<a href='#'>"+line+"</a>");
+				  					out.print("<a href='?plan="+plan+"&planD="+line+"'>"+line+"</a>");
 				  				}
+				  				out.print("</div>");
 			  				}
 			  				if(plan.equals("supplementplan")){
 			  					out.print("<button class='dropbtn'>Supplement Plans</button>");
 				  				out.print("<div class='dropdown-content'>");
 				  				for(String line: meta.valuePull("supplementplan","Name")){
-				  					out.print("<a href='#'>"+line+"</a>");
+				  					out.print("<a href='?plan="+plan+"&planD="+line+"'>"+line+"</a>");
 				  				}
+				  				out.print("</div>");
 			  				}
 			  				if(plan.equals("dailymealplan")){
 			  					out.print("<button class='dropbtn'>Meal Plans</button>");
 				  				out.print("<div class='dropdown-content'>");
-				  				for(String line: meta.valuePull("workoutplan","WorkoutPlan")){
-				  					out.print("<a href='#'>"+line+"</a>");
+				  				for(String line: meta.valuePull("dailymealplan","name")){
+				  					out.print("<a href='?plan="+plan+"&planD="+line+"'>"+line+"</a>");
 				  				}
+				  				out.print("</div>");
 			  				}
-			  				
-			  				
-			  		
 			  			}
 			  		}
 			  		catch(NullPointerException e){
 			  			
 			  		}
-			  		
-			  		
 			  	%>
-			  
-			  
-			    
-			    
-			   
 			  </div>
 			</div>
+		</td>
+		<td class = "searchColumn">
+			<div class="dropdown">
+				<% 
+			  		try{
+			  			String planD = request.getParameter("planD");
+			  			String plan = request.getParameter("plan");
+			  			
+			  			if (planD != null && !planD.isEmpty()) {
+			  				
+		  					out.print("<button class='dropbtn'>"+planD+"</button>");
+		  					out.print("</div>");
+		  					out.print("</td>");
+		  					out.print("</tr>");
+		  					out.print("</table>");
+		  					
+			  				
+			  				ArrayList<ArrayList> end = meta.blockBuilder("workout_has_exercise");
+				  			
+				  			ArrayList<String> temp = new ArrayList<String>();
+				  			String cValue = "";
+				  			for(ArrayList<String> row : end){
+				  				if(row.contains(planD)){
+				  					cValue = row.get(0);
+				  					temp.add(cValue);
+				  					System.out.println(cValue);
+				  				}
+				  			}
+				  			out.print("<table class = 'sResults'>");
+				  			ArrayList<String> cols = new ArrayList<String>();
+				  			cols = meta.colReturn("exercise");
+				  			out.print("<tr>");
+				  			for(String col1 : cols){
+				  				
+	  						out.print("<th>");
+	  						out.print(col1);
+	  						out.print("</th>");
+			  	
+				  			}
+				  			
+				  			out.print("</tr>");
+				  			ArrayList<ArrayList> val = meta.blockBuilder("exercise");
+				  			for(ArrayList<String> row2 : val){
+				  				if(temp.contains(row2.get(0))){
+				  					out.print("<tr>");
+				  					for(String value : row2){
+				  						out.print("<td class = 'cell1'>");
+				  						out.print(value);
+				  						out.print("</td>");
+				  						
+				  					}
+				  					out.print("</tr>");
+				  						}
+				  					
+				  			}
+				  			out.print("</table>");
+			  			
+			  			}
+			  		}
+			  		catch(NullPointerException e){
+			  			
+			  		}
+			  	%>
+			  </div>
 		</td>
 	</tr>
 </table>

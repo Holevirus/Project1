@@ -168,7 +168,6 @@ newList = meta.getTableMetadata();
 				  				if(row.contains(planD)){
 				  					cValue = row.get(counter);
 				  					temp.add(cValue);
-				  					System.out.println(cValue);
 				  				}
 				  			}
 				  			out.print("<table class = 'sResults'>");
@@ -280,9 +279,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	      <img src="Pics/power.jpg" alt="Jane" style="width:90%">
 	      <div class="container">
 	        <h2>Power Lifting</h2>
-	        <p class="title">Hello</p>
-	        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-	        <p>Lifting stuff</p>
+	        
 	      </div>
 	    </div>
 	  </td>
@@ -292,10 +289,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	      <img src="Pics/olympic.jpg" alt="Mike" style="width:100%">
 	      <div class="container">
 	        <h2>Olympic Lifts</h2>
-	        <p class="title">Hello</p>
-	        <p>Olympic lifts are a great way to get full body strength becauase of the activation of more than 1 muscle group.</p>
-	        <p>It's important to incorporate Olympic lift</p>
-	      </div>
+	        
 	    </div>
 	  </td>
 	
@@ -304,9 +298,7 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 	      <img src="Pics/running.jpg" alt="John" style="width:100%">
 	      <div class="container">
 	        <h2>Running/Cardio</h2>
-	        <p class="title">Hello</p>
-	        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-	        <p>lifting stuff</p>
+	        
 	      </div>
 	    </div>
 	  </td>
@@ -328,12 +320,12 @@ Wellness has various dimensions and can be viewed a quality, state, or process.
 			  <a href="#meal">Daily Meal Plan</a>
 			  <a href="#supp">Supplement Plan</a>
 			</div>
-	    <h2>Power Lifting</h2>
+	    <h2>Quick Overview</h2>
 	  </div>
 	 <div class="modal-body">
 		    <div class = "modal-background1-1" id = "home">
 		    	<!--  PAGE 1 -->
-		    	<h1>Retrieve data from database in jsp</h1>
+		    	<h1>Quick View Some Plans Below</h1>
 			<table class = "data" border="1">
 			<tr>
 				<th>Workout Plan</th>
